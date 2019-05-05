@@ -1,0 +1,319 @@
+*{ margin:0; padding:0;}
+
+::-webkit-input-placeholder {color:#bdbdbd;}
+::-moz-placeholder          {color:#bdbdbd;}/* Firefox 19+ */
+:-moz-placeholder           {color:#bdbdbd;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#bdbdbd;}
+
+/*********************************************************************************************/
+/*********************************************************************************************/
+
+body{
+    font-family: 'Comfortaa', cursive;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn {
+    display: block;
+    width: ;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+    .btn:hover {
+        
+    }
+
+.text p {
+
+}
+
+/********************************* -- Text_STYLE -- ******************************************/
+/********************************* -- Text_STYLE -- ******************************************/
+
+h1 {
+        
+}
+
+h2 {
+    
+}
+
+h3 {
+    
+}
+
+p {
+   
+}
+
+
+/********************************* -- DOP_CLASS_ -- ********************************************/
+/********************************* -- DOP_CLASS_ -- ********************************************/
+
+.clear {
+	clear: both;
+}
+
+.clearfix:after, .two_col:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.two_col .col {
+    width: 50%;
+    float: left;
+}
+/******************************** -- Configuration -- *****************************************/
+/******************************** -- Configuration -- *****************************************/
+/******************************** -- Configuration -- *****************************************/
+html, body {
+    overflow-x: hidden;
+}
+
+div, p, section, header, footer, input, textarea, time, nav, article, form, ul, ol, select, h1, h2, h3 {
+    box-sizing: border-box;
+	-moz-box-sizing: border-box; /*Firefox 1-3*/
+	-webkit-box-sizing: border-box; /* Safari */
+}
+
+button:focus, input[type=submit], input[type=search], select:focus, textarea:focus { outline: none; }
+
+a { text-decoration: none; }
+
+textarea, input { 
+    -webkit-appearance: none; 
+    border-radius: 0;
+}
+
+button, input[type=submit]{
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+} 
+
+/******************************** -- Плавающая шапка -- *****************************************/
+/******************************** -- Плавающая шапка -- *****************************************/
+.b_fix {
+    height: 1px;
+    background: transparent;
+    position: fixed;
+    top: 0;
+}
+header {
+   -webkit-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+.scroll header {
+    padding: 13px 0;
+    background: #fff;
+    -webkit-transition: 0.5s ease-out;
+    transition: 0.5s ease-out;
+    border-bottom: 1px solid #42a3f2;
+}
+/******************************** -- Плавающая шапка -- *****************************************/
+/******************************** -- Плавающая шапка -- *****************************************/
+
+
+/******************************** -- Моб.меню кнопка -- *****************************************/
+/******************************** -- Моб.меню кнопка -- *****************************************/
+.open_mob_menu {
+    display: none;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    overflow: hidden;
+}
+    .open_mob_menu span, .open_mob_menu:before, .open_mob_menu:after {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 6px;
+        background: #000;
+        left: 0;
+        -webkit-transition: 0.2s ease-out;
+        transition: 0.2s ease-out;
+        z-index: 99999;
+    } 
+    .open_mob_menu span {
+        top: 50%;
+        margin-top: -3px;
+    }
+    .open_mob_menu:before, .open_mob_menu:after {
+        content: "";
+        -webkit-transform: rotate(0); 
+        transform: rotate(0); 
+        transform-origin: 0px 0px;
+	    -ms-transform-origin: 0px 0px;
+	    -webkit-transform-origin: 0px 0px;
+	    -o-transform-origin: 0px 0px;
+	    -moz-transform-origin: 0px 0px;
+    }
+    
+    .open_mob_menu:before {top: 0;}
+    .open_mob_menu:after {bottom: 0;}
+
+    .open_mob_menu.active:before {
+        top: 2px; left: 7px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    .open_mob_menu.active:after {
+        bottom: 2px; left: 3px;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    .open_mob_menu.active span {
+        opacity: 0;
+        left: -100%;
+    }
+/******************************** -- Моб.меню кнопка -- *****************************************/
+/******************************** -- Моб.меню кнопка -- *****************************************/
+
+@media (max-width: 1200px){
+    .container {
+        width: 1024px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }    
+    
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 1024px){
+    .container {
+        width: 991px;
+    }     
+    
+}
+
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 991px){
+    
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    left: 0;
+    position: relative;
+}
+    
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */
+    header .row .wrapp_bg, .container {
+        width: 768px;
+    } 
+    header .row .wrapp_bg .wrapp_menu {
+        width: 260px;
+    }
+    .container.active {
+        left: 270px;
+    }
+    header .row .wrapp_bg .wrapp_menu, header .row .wrapp_bg:before {
+        background: #ccc;   /* <<<<----- ЦВЕТ МОБ. МЕНЮ <<<<----- */
+    }
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */
+     
+    .container, header .row {
+        -webkit-transition: 0.3s ease-out;
+        transition: 0.3s ease-out;
+    }  
+    .open_mob_menu {
+        display: block;
+        z-index: 999;
+    }
+    header .row {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        margin: 0;
+        overflow: hidden;
+    }
+        header .row.active { left: 0;}
+
+        header .row .wrapp_bg {
+            margin: 0 auto;
+            position: relative;
+            height: 100%;  
+        }
+        header .row .wrapp_bg:before {
+            display: block;
+            content: "";
+            width: 500px;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: -499px;
+        }
+    
+        header .row .wrapp_bg .wrapp_menu {
+            height: 100%;
+            position: relative;
+            overflow-y: auto;
+        }    
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 767px){
+    
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */
+    header .row .wrapp_bg, .container {
+        width: 480px;
+    } 
+    header .row .wrapp_bg .wrapp_menu {
+        width: 260px;
+    }
+    .container.active {
+        left: 270px;
+    }
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */
+   
+   
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 480px){
+    
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */
+    header .row .wrapp_bg, .container {
+        width: 320px;
+    } 
+    header .row .wrapp_bg .wrapp_menu {
+        width: 260px;
+    }
+    .container.active {
+        left: 260px;
+    }
+/* -----------------------mob_menu_width------------------------------------- */
+/* -----------------------mob_menu_width------------------------------------- */ 
+}
+
+
+
+
+
+
+
