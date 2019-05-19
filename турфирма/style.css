@@ -1510,6 +1510,15 @@ footer {
     .news_offers .item .text_info {
         padding-right: 19px;
     }
+    /* ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------- */
+    .select_inp .label_check li label span {
+        width: 150px;
+    }
+    .content .right_part .hotel ul li a p, .content .two_col .col .hot_offers li a p {
+        width: 281px;
+    }
 }
 
 
@@ -1554,6 +1563,18 @@ footer {
     }
     .news_offers .item {
         width: 226px;
+    }
+    /* ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------- */
+    /* ------------------------------------------------------------------- */
+    .select_inp form .block_sel {
+        width: 210px;
+    }
+    .select_inp .label_check li label span {
+        width: 145px;
+    }
+    .content .right_part .hotel ul li a p, .content .two_col .col .hot_offers li a p {
+        width: 266px;
     }
 }
 
@@ -1754,6 +1775,12 @@ footer {
     .content .two_col .news_col li .data, .content .two_col .news_col li .news_news {
         width: 200px;
     }
+    .news_offers .item:nth-child(3) {
+        margin-left: 0;
+    }
+    .news_offers .item {
+        margin-bottom: 20px;
+    }
     /* ------------------------------------------------------------------- */
     footer ul {
         margin: 20px 0;
@@ -1836,6 +1863,50 @@ footer {
         .content .right_part .pay_card ul li:nth-child(4n+5) {
             margin-left: 0;
         }
+    .content .left_part .slider_block .slider_bron .slider-for, .content .left_part .slider_block .slider_bron .slider-for .item img {
+        width: 320px;
+        height: 270px;
+        border-top-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .content .left_part .price_bron .item img {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+    .content .left_part .price_bron .item .info, .content .left_part .price_bron .item .advantages {
+        text-align: center;
+        float: none;
+    }
+    .content .left_part .tag_left_part .name_info {
+        padding-left: 0;
+    }
+    .content .left_part .tag_left_part ul {
+        width: 240px;
+    }
+    .content .left_part .tag_left_part ul li {
+        margin-bottom: 10px;
+    }
+    .content .left_part .tag_left_part ul li:nth-child(1) {
+        margin-left: 5px;
+    }
+    .content .two_col .col {
+        width: 100%;
+    }
+    .content .two_col .news_col li .data {
+        margin-top: 0;
+    }
+    .content .two_col .news_col li .data, .content .two_col .news_col li .news_news {
+        width: 185px;
+    }
+    .content .two_col .col:nth-child(2) {
+       margin-top: 30px; 
+    }
+    .news_offers .item {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
     footer ul li {
         width: 150px;
         padding-left: 20px;
@@ -1869,4 +1940,13 @@ footer {
             .content .right_part .hotel ul li a .name_hotel, .content .two_col .col .hot_offers li a .name_hotel, .content .right_part .hotel ul li a .name_city, .content .two_col .col .hot_offers li a .name_city {
                 width: 100%;
             }
+    .content .left_part .slider_block .slider_bron .slider-for, .content .left_part .slider_block .slider_bron .slider-for .item img {
+        width: 300px;
+    }
+    .content .left_part .tag_left_part ul {
+        width: 222px;
+    }
+    .content .two_col .news_col li .data, .content .two_col .news_col li .news_news {
+        width: 165px;
+    }
 }

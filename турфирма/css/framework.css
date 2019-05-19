@@ -112,7 +112,7 @@ header {
     transition: 0.3s ease-out;
 }
 .scroll header {
-    padding: 0;
+    padding: 1px;
     border-bottom: 2px solid #01a3df;
 }
 /******************************** -- Плавающая шапка -- *****************************************/
