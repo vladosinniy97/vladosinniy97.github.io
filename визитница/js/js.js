@@ -2,11 +2,19 @@
 //////////////////////////////SLIDER_SLIDER_SLIDER_SLIDER///////////////////////////
 //////////////////SLIDER_SLIDER_SLIDER_SLIDER///////////////////////////////////////
 $(document).ready(function(){
-    $('.slider_home').slick({
+    $('.slider').slick({
         centerPadding: '0px',
         dots: true
     });
-     $('.content .slider').slick({
+    ///////////////////////////
+     $('.slider .slider_home').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '0px',
+        arrows: true
+    });
+    ///////////////////////////
+    $('.cooperat_with_us .main').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         centerPadding: '0px',
