@@ -121,20 +121,6 @@ header {
             line-height: 36px;
             margin-bottom: 66px;
         }
-        .all_provider .content .btn {
-            width: 250px;
-            height: 57px;
-            line-height: 57px;
-            color: #fff;
-            font-weight: 600;
-            font-size: 24px;
-            text-align: center;
-            background: #ff4431;
-            color: #fff;
-            border-radius: 3px;
-            border: 1px solid #fff;
-            margin: 0 auto;
-        }
    .all_provider.home .all_servise_name {
         font-size: 80px;
         color: #fff;
@@ -187,7 +173,7 @@ header {
 /* ---------    uslugi_search     ----- */
 /* ------------------------------------ */
     .search {
-        margin-top: 44px;
+        margin-top: 70px;
     }
         .search ul {
             list-style: none;
@@ -259,7 +245,7 @@ header {
                 float: left;
                 font-weight: 400;
                 line-height: 60px;
-                height: 60px;
+                height: 59px;
                 border: 1px solid #ff6b31;
                 margin-left: 28px;
                 text-align: center;
@@ -500,6 +486,7 @@ header {
         .content .content_info {
             float: left;
             width: 100%;
+            margin-bottom: 67px;
         }
             .content .content_info .name {
                 color: #077d83;
@@ -552,7 +539,7 @@ header {
                     }
                 .content .content_info .main .item {
                     background: rgba(120, 195, 222, 0.2);
-                    padding: 19px 12px;
+                    padding: 19px 20px;
                     float: left;
                     width: 100%;
                     border-radius: 5px;
@@ -1043,31 +1030,31 @@ footer {
 /*             place_service              */
 /* ---                              --- */
 /* ------------------------------------ */
-.content_info .ad {
+.ad {
     margin-top: 40px; 
     padding-bottom: 70px;
 }
-    .content_info .ad ul {
+    .ad ul {
         list-style: none;  
     }
-        .content_info .ad ul li {
+        .ad ul li {
             display: block; 
             margin-top: 25px;
         }
-            .content_info .ad ul li:nth-child(1) {
+            .ad ul li:nth-child(1) {
                 margin-top: 0;
             }
-            .content_info .ad ul li:nth-child(1) label input {
+            .ad ul li:nth-child(1) label input {
                 width: 270px;
                 margin-right: 15px;
             }
-                .content_info .ad ul li label span {
+                .ad ul li label span {
                     color: #077d83;
                     font-size: 30px;
                     width: 300px;
                     float: left;
                 }
-                .content_info .ad ul li label input {
+                .ad ul li label input {
                     height: 60px;
                     line-height: 60px;
                     border: 2px solid #ffaa31;
@@ -1078,16 +1065,16 @@ footer {
                     color: #ff6b31;
                     font-size: 25px;
                 }
-                    .content_info .ad ul li label input::placeholder {
+                    .ad ul li label input::placeholder {
                         color: #ff6b31;
                         font-size: 20px;
                     }
-                .content_info .ad ul li label .add {
+                .ad ul li label .add {
                     color: #ff6b31;
                     font-size: 25px;
                     font-weight: 600;
                 }
-                .content_info .ad ul li label textarea {
+                .ad ul li label textarea {
                     max-width: 816px;
                     min-width: 816px;
                     min-height: 234px;
@@ -1101,15 +1088,15 @@ footer {
                 }
         /* ------------------------------------ */
         /* ------------------------------------ */
-            .content_info .ad ul .add_photo {
+            .ad ul .add_photo {
                 position: relative;
             }
-                .content_info .ad ul .add_photo label input {
+                .ad ul .add_photo label input {
                     width: 145px;
                     height: 145px;
                     overflow: hidden;
                 }
-                .content_info .ad ul .add_photo label img {
+                .ad ul .add_photo label img {
                     position: absolute;
                     width: 141px;
                     height: 141px;
@@ -1119,20 +1106,20 @@ footer {
                 }
         /* ------------------------------------ */
         /* ------------------------------------ */
-        .content_info .ad ul .price {
+        .ad ul .price {
             display: inline-block;
         }
-            .content_info .ad ul .price:after {
+            .ad ul .price:after {
                 content: 'Руб';
                 color: #077d83;
                 font-size: 30px;
             }
-            .content_info .ad ul .price input {
+            .ad ul .price input {
                 width: 250px;
             }
         /* ------------------------------------ */
         /* ------------------------------------ */
-        .content_info .ad .btn {
+        .ad .btn {
             width: 315px;
             line-height: 58px;
             background: #ff6b31;
@@ -1144,8 +1131,9 @@ footer {
             margin-top: 25px;
             border-radius: 0;
             font-weight: 400;
+            text-align: center;
         }
-            .content_info .ad .btn:hover {
+            .ad .btn:hover {
                 background: none;
                 color: #ff6b31;
             }
@@ -1317,13 +1305,10 @@ footer {
         width: 270px;
     }
     .search .btn {
-        width: 211px;
-        margin-left: 0;
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        width: 213px;
     }
     .content .content_info .main .item .item_info {
-        width: 460px;
+        width: 446px;
     }
     .content .content_info .main .item .item_contact {
         width: 230px;
@@ -1409,26 +1394,26 @@ footer {
     /*          place_service          */
     /* ---                              --- */
     /* ------------------------------------ */
-    .content_info .ad ul li label span {
+    .ad ul li label span {
         width: 280px;
     }
-    .content_info .ad ul li:nth-child(1) label input {
+    .ad ul li:nth-child(1) label input {
         width: 219px;
     }
-    .content_info .ad ul li label input {
+    .ad ul li label input {
         width: 714px;
     }
-    .content_info .ad ul li label textarea {
+    .ad ul li label textarea {
         min-width: 714px;
         max-height: 714px;
     }
-    .content_info .ad ul .add_photo label img {
+    .ad ul .add_photo label img {
         left: 283px;
     }
-    .content_info .ad .btn {
+    .ad .btn {
         margin-left: 280px;
     }
-    .content_info .submit_ad {
+    .submit_ad {
         padding: 70px 30px;
     }
     /* ------------------------------------ */
@@ -1499,7 +1484,7 @@ footer {
         width: 220px;
     }
     .content .content_info .main .item .item_info {
-        width: 430px;
+        width: 417px;
     }
     .content .content_info .main .item .item_info, .content .content_info .main .item .item_contact {
         height: 200px;
@@ -1570,27 +1555,27 @@ footer {
     /*          place_service          */
     /* ---                              --- */
     /* ------------------------------------ */
-    .content_info .ad ul li label span {
+    .ad ul li label span {
         width: 260px;
         font-size: 28px;
     }
-    .content_info .ad ul li label .add {
+    .ad ul li label .add {
         font-size: 23px;
     }
-    .content_info .ad ul li label input {
+    .ad ul li label input {
         width: 701px;
     }
-    .content_info .ad ul li label textarea {
+    .ad ul li label textarea {
         min-width: 701px;
         max-height: 701px;
     }
-    .content_info .ad ul .add_photo label img {
+    .ad ul .add_photo label img {
         left: 263px;
     }
-    .content_info .ad .btn {
+    .ad .btn {
         margin-left: 260px;
     }
-    .content_info .submit_ad {
+    .submit_ad {
         padding: 20px 20px;
     }
     /* ------------------------------------ */
@@ -1859,25 +1844,25 @@ footer {
     /*          place_service          */
     /* ---                              --- */
     /* ------------------------------------ */
-    .content_info .ad ul li:nth-child(1) label input {
+    .ad ul li:nth-child(1) label input {
         width: 246px;
     }     
-    .content_info .ad ul li label span {
+    .ad ul li label span {
         width: 767px;
         margin-bottom: 5px;
     }
-    .content_info .ad ul li label input {
+    .ad ul li label input {
         width: 767px;
     }
-    .content_info .ad ul li label textarea {
+    .ad ul li label textarea {
         max-width: 767px;
         min-width: 767px;
     }
-    .content_info .ad ul .add_photo label img {
-        left: 3px;
-        top: 45px;
+    .ad ul .add_photo label img {
+        left: 2px;
+        top: 41px;
     }
-    .content_info .ad .btn {
+    .ad .btn {
         margin-left: 226px;
     }
     /* ------------------------------------ */
@@ -1936,6 +1921,7 @@ footer {
     }
     .search ul li input {
         width: 370px;
+        
     }
     .search ul li:nth-child(1) {
         padding: 0 10px 0 65px;
@@ -1945,6 +1931,7 @@ footer {
             float: none;
             display: block;
             border-top: 2px solid #ffaa31;
+            border-right: 2px solid #ffaa31;
             border-left: 0;
         }
     .search .btn {
@@ -1992,6 +1979,9 @@ footer {
         width: 220px;
         height: inherit;
         float: none;
+    }
+    .content .contact_info .call li:nth-child(1) {
+        padding-left: 0;
     }
     .content .content_info .main .item .item_info p a {
         display: block;
@@ -2056,24 +2046,24 @@ footer {
     /*          place_service          */
     /* ---                              --- */
     /* ------------------------------------ */
-    .content_info .ad ul li:nth-child(1) label input {
+    .ad ul li:nth-child(1) label input {
         width: 480px;
         margin-right: 0;
     }   
-    .content_info .ad ul li label input {
+    .ad ul li label input {
         margin-bottom: 7px;
     }  
-    .content_info .ad ul li label span {
+    .ad ul li label span {
         width: 480px;
     }
-    .content_info .ad ul li label input {
+    .ad ul li label input {
         width: 480px;
     }
-    .content_info .ad ul li label textarea {
+    .ad ul li label textarea {
         max-width: 480px;
         min-width: 480px;
     }
-    .content_info .ad .btn {
+    .ad .btn {
         margin-left: 82px;
     }
     .submit_ad h2 {
@@ -2169,6 +2159,9 @@ footer {
     .slider .slider_home_item .btn {
         width: 200px;
         font-size: 21px;
+    }
+    .content_info .sl_info .contact_info {
+        width: 320px;
     }
     /* ------------------------------------ */
     /* ------------------------------------ */
@@ -2272,24 +2265,25 @@ footer {
     /*          place_service          */
     /* ---                              --- */
     /* ------------------------------------ */
-    .content_info .ad ul li {
+    .ad ul li {
         margin-top: 10px;
     }
-    .content_info .ad ul li:nth-child(1) label input {
-        width: 320px;
+    .ad ul li:nth-child(1) label input {
+        width: 300px;
     }     
-    .content_info .ad ul li label span {
-        width: 320px;
+    .ad ul li label span {
+        width: 300px;
     }
-    .content_info .ad ul li label input {
-        width: 320px;
+    .ad ul li label input {
+        width: 300px;
     }
-    .content_info .ad ul li label textarea {
-        max-width: 320px;
-        min-width: 320px;
+    .ad ul li label textarea {
+        max-width: 300px;
+        min-width: 300px;
     }
-    .content_info .ad .btn {
+    .ad .btn {
         margin-left: 0;
+        width: 300px;
     }
     .submit_ad h2 {
         font-size: 32px;
@@ -2361,6 +2355,7 @@ footer {
     }
     /* ------------------------------------ */
     /* ------------------------------------ */
+    
     .search ul li:nth-child(1) {
         padding: 0 0px 0 50px;
     }
@@ -2368,10 +2363,22 @@ footer {
         left: 15px;
     }
     .search ul li input {
-        width: 226px;
+        width: 219px;
     }
     .search .btn {
         width: 278px;
+    }
+    .all_provider .search .btn {
+        width: 279px;
+    }
+    .all_provider .search ul li input {
+        width: 219px;
+    }
+    .content .content_info .main .item {
+        width: 95%;
+    }
+    .content .content_info .pagi.right {
+        float: none;
     }
     /* ------------------------------------ */
     /* ------------------------------------ */
@@ -2426,22 +2433,25 @@ footer {
     }
     /* ------------------------------------ */
     /* ------------------------------------ */
-    .content_info .ad ul li:nth-child(1) label input {
-        width: 300px;
+    .ad ul li:nth-child(1) label input {
+        width: 280px;
     }     
-    .content_info .ad ul li label span {
-        width: 300px;
+    .ad ul li label span {
+        width: 280px;
     }
-    .content_info .ad ul li label input {
-        width: 300px;
+    .ad ul li label input {
+        width: 280px;
     }
-    .content_info .ad ul li label textarea {
-        max-width: 300px;
-        min-width: 300px;
+    .ad ul li label textarea {
+        max-width: 280px;
+        min-width: 280px;
     }
-    .content_info .ad .btn {
-        width: 300px;
+    .ad .btn {
+        width: 280px;
         font-size: 24px;
+    }
+    .submit_ad {
+        padding: 20px 0;
     }
     /* ------------------------------------ */
     /* ------------------------------------ */
@@ -2451,5 +2461,8 @@ footer {
     /* ------------------------------------ */
     .content .name_name {
         font-size: 33px;
+    }
+    .content_info .sl_info .contact_info {
+        width: 300px;
     }
 }
