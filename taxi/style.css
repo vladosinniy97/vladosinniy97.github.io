@@ -1,0 +1,3175 @@
+@font-face {
+	font-family: 'helBL';
+	src: url('fonts/helveticaneuecyr-black.eot');
+	src: local('☺'), url('fonts/helveticaneuecyr-black.woff') format('woff'), url('fonts/helveticaneuecyr-black.ttf') format('truetype'), url('fonts/helveticaneuecyr-black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helM';
+	src: url('fonts/helveticaneuecyr-medium.eot');
+	src: local('☺'), url('fonts/helveticaneuecyr-medium.woff') format('woff'), url('fonts/helveticaneuecyr-medium.ttf') format('truetype'), url('fonts/helveticaneuecyr-medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helR';
+	src: url('fonts/helveticaneuecyr-roman.eot');
+	src: local('☺'), url('fonts/helveticaneuecyr-roman.woff') format('woff'), url('fonts/helveticaneuecyr-roman.ttf') format('truetype'), url('fonts/helveticaneuecyr-roman.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helB';
+	src: url('fonts/helveticaneuecyr-bold.eot');
+	src: local('☺'), url('fonts/helveticaneuecyr-bold.woff') format('woff'), url('fonts/helveticaneuecyr-bold.ttf') format('truetype'), url('fonts/helveticaneuecyr-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helL';
+	src: url('fonts/helveticaneuecyr-light.eot');
+	src: local('☺'), url('fonts/helveticaneuecyr-light.woff') format('woff'), url('fonts/helveticaneuecyr-light.ttf') format('truetype'), url('fonts/helveticaneuecyr-light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*               header                 */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+header {
+    width: 100%;
+    position: fixed;
+    float: left;
+    background: #0595d3;
+    background-size: cover;
+    z-index: 999;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14); 
+    -moz-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14); 
+    -webkit-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
+    -o-box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14); 
+}
+    header .top_head {
+        padding: 5px 0;
+        width: 100%;
+        float: left;
+    }
+        header .logo {
+            float: left;
+            padding-left: 29px;
+        }
+            header .logo img {
+                width: 110px;
+                height: auto;
+            }
+        header .navigation {
+            float: left;
+            list-style: none;
+            margin-left: 30px;
+        }
+            header .navigation li {
+                float: left;
+                margin-left: 28px;
+            }
+                header .navigation li:nth-child(1) {
+                    margin-left: 0;
+                }
+                header .navigation li a {
+                    color: #fff;
+                    font-size: 16px;
+                    line-height: 70px;
+                    font-family: 'HelM';
+                    border-bottom: 1px solid transparent;
+                    padding-bottom: 7px;
+                }
+                    header .navigation li a:hover {
+                        border-bottom: 1px solid #16bdea;
+                        transition: 0.3s ease-out;
+                        -o-transition: 0.3s ease-out;
+                        -webkit-transition: 0.3s ease-out;
+                        -moz-transition: 0.3s ease-out;
+                    }
+        header .btn.taxi {
+            line-height: 39px;
+            float: left;
+            margin-left: 18px;
+            margin-top: 15px;
+            width: 164px;
+            background: url(img/taxi_bg.png) no-repeat center left 15px, #ffd93a;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box; /*Firefox 1-3*/
+            -webkit-box-sizing: border-box; /* Safari */
+            border-radius: 3px;
+            color: #000;
+            font-family: 'HelB';
+            padding-right: 15px;
+            text-transform: uppercase;
+            text-align: right;
+        }
+            header .btn.taxi:hover {
+                box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); 
+                -o-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+        header .contact {
+            float: left;
+            margin-left: 35px;
+            margin-top: 10px;
+        }
+            header .contact p {
+                font-size: 20px;
+                color: #fff;
+            }
+                header .contact p span {
+                    font-weight: 700;
+                }
+            header .contact .btn {
+                margin-top: 5px;
+            }
+                header .contact .btn span {
+                    color: #c2f4fc;
+                    font-size: 17px;
+                    border-bottom: 1px dashed #a1dff2;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                home              */
+/* ---                              --- */
+/* ------------------------------------ */
+.home {
+    width: 100%;
+    background: url(img/home_bg.png) no-repeat center top;
+    background-size: cover;
+    margin-top: 80px;
+    padding-bottom: 323px;
+}
+    .home .text_name {
+        color: #fefefe;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 15px;
+        font-family: 'helBL';
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        -o-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        -moz-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+        -webkit-text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+    }
+    .home .text_home {
+        color: #fff;
+        font-size: 16px;
+        width: 345px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .travel {
+        width: 995px;
+        border: 3px solid #ffd93a;
+        border-radius: 3px;
+        margin: 0 auto;
+        height: 114px;
+        padding: 0 56px;
+        background: rgba(255,255,255, 0.48);
+        margin-top: 15px;
+    }
+        .travel label {
+            float: left;
+            padding-top: 15px;
+        }
+            .travel label:nth-child(2) {
+                padding-top: 50px;
+                margin: 0 15px;
+            }
+            .travel label p {
+                color: #404040;
+                font-size: 17px;
+            }
+            .travel label input  {
+                width: 298px;
+                height: 41px;
+                border: 1px solid #70b2ce;
+                border-radius: 3px;
+                margin-top: 5px;
+                font-size: 18px;
+                color: #70b2ce;
+                padding-left: 5px;
+                outline: none;
+            }
+            .travel label .btn  {
+                width: 196px;
+                line-height: 41px;
+                height: 41px;
+                border: 3px solid #bdeb7c;
+                margin-left: 15px;
+                margin-top: 23px;
+                border-radius: 3px;
+                background: #aadb66;
+                font-family: 'HelB';
+                font-size: 14px;
+                color: #fff;
+                text-transform: uppercase;
+                text-align: center;
+            }
+                .travel label .btn:hover  {
+                    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); 
+                    -o-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                service             */
+/* ---                              --- */
+/* ------------------------------------ */
+.service {
+    width: 100%;
+    background: url(img/service_bg.png) no-repeat center top 70px;
+    padding-bottom: 80px;
+}
+    .service .item {
+        width: 100%;
+        clear: both;
+    }
+        .service .item .item_child {
+            float: left;
+            margin-top: 100px;
+        }
+            .service .item .item_child:nth-child(2) {
+                float: right;
+            } 
+            .service .item .item_child .img_child {
+                float: left;
+                width: 133px;
+                height: 110px;
+                line-height: 110px;
+                text-align: center;
+            }
+                .service .item .item_child .img_child img {
+                    vertical-align: middle;
+                }
+            .service .item .item_child .text_child {
+                float: left;
+                width: 230px;
+            }
+                .service .item .item_child .text_child h3 {
+                    font-size: 20px;
+                    color: #393939;
+                    font-weight: 700;
+                    width: 200px;
+                    padding-bottom: 15px;
+                    padding-top: 5px;
+                }
+                .service .item .item_child .text_child p {
+                    font-size: 16px;
+                    color: #6a6a6a;
+                    line-height: 22px;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                how_work             */
+/* ---                              --- */
+/* ------------------------------------ */
+.how_work {
+    width: 100%;
+    background: #1caff6;
+    padding-bottom: 75px;
+}
+    .how_work h2 {
+        color: #fff;
+        font-size: 40px;
+        font-weight: 700;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .how_work .main {
+        margin: 0 auto;
+        width: 1075px;
+        padding-top: 28px;
+    }
+        .how_work .main .item {
+            float: left;
+            width: 33.33333%;
+        }
+            .how_work .main .item .item_img {
+                height: 180px;
+            }
+                .how_work .main .item_1 .item_img img {
+                    padding-left: 85px;
+                }
+                .how_work .main .item_2 .item_img img {
+                    padding-left: 109px;
+                }
+                .how_work .main .item_3 .item_img img {
+                    padding-left: 110px;
+                }
+                .how_work .main .item span {
+                    border: 7px solid #1a90c9;
+                    border-radius: 50%;
+                    color: #ffe340;
+                    font-size: 25px;
+                    font-family: 'helBL';
+                    width: 38px;
+                    height: 38px;
+                    line-height: 38px;
+                    display: block;
+                    margin: 0 auto 13px;
+                    text-align: center;
+                    position: relative;
+                }
+                    .how_work .main .item span:after {
+                        content: '';
+                        position: absolute;
+                        top: 16px;
+                        left: 44px;
+                        width: 309px;
+                        height: 7px;
+                        background: #1a90c9;
+                    }
+                        .how_work .main .item:last-child span:after {
+                            content: '';
+                            display: none;
+                        }
+                .how_work .main .item p {
+                    font-size: 20px;
+                    color: #fff;
+                    width: 188px;
+                    margin: 0 auto;
+                    text-align: center;
+                    font-family: 'HelM';
+                    line-height: 30px;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                directions             */
+/* ---                              --- */
+/* ------------------------------------ */
+.directions {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 83px;
+}
+    .directions h1 {
+        color: #525151;
+        font-size: 30px;
+        font-family: 'HelM';
+        padding-top: 85px;
+        text-align: center;
+    }
+    .directions .slider {
+        margin: 0 auto;
+        width: 1075px;
+        clear: both;
+        padding-top: 54px;
+    }
+        .directions .slider .item {
+            padding-right: 20px;
+            outline: none;
+            overflow: hidden;
+        }
+            .directions .slider .item:hover .item_img, .item_text, .btn_parrents {
+            }
+            .directions .slider .item_img {
+                height: 236px;
+                width: 100%;
+                border-top: 1px solid #d7d9db;
+                border-right: 1px solid #d7d9db;
+                border-left: 1px solid #d7d9db;
+                border-top-left-radius: 3px;
+                border-top-right-radius: 3px;
+            }
+                .directions .slider .item img {
+                    height: 100%;
+                    width: 100%;
+                    border-top-left-radius: 3px;
+                    border-top-right-radius: 3px;
+                }
+            .directions .slider .item_text {
+                background: #fff;
+                width: 100%;
+                border-right: 1px solid #d7d9db;
+                border-left: 1px solid #d7d9db;
+                text-align: center;
+                padding-bottom: 25px;
+                padding-left: 15px;
+            }
+                .directions .slider .item_text p {
+                    color: #828282;
+                    font-size: 16px;
+                    text-align: center;
+                    padding-top: 24px;
+                }
+                .directions .slider .item_text span {
+                    font-family: 'HelB';
+                    color: #1a90c9;
+                    font-size: 18px;
+                    display: inline-block;
+                    margin-top: 12px;
+                    margin-right: 18px;
+                    position: relative;
+                }
+                    .directions .slider .item_text span:before {
+                        content: url(img/point.png);
+                        margin-right: 7px;
+                    }
+                    .directions .slider .item_text span:after {   
+                        content: '';
+                        position: absolute;
+                        left: -21px;
+                        top: 6px;
+                        width: 19px;
+                        height: 6px;
+                        background: url(img/strelka.png) no-repeat center center;
+                    }
+                        .directions .slider .item_text .first:after {   
+                            display: none;
+                        }
+                .directions .slider .btn_parrents {   
+                    padding: 22px 0;
+                    border: 1px solid #d7d9db;
+                    border-bottom: 2px solid #d7d9db;
+                    border-bottom-left-radius: 3px;
+                    border-bottom-right-radius: 3px;
+                    background: #f9f9f9;
+                }
+                    .directions .slider .btn_parrents .btn {   
+                        margin: 0 auto;
+                        width: 130px;
+                        line-height: 31px;
+                        border: 1px solid #d1d1d1;
+                        border-radius: 5px;
+                        color: #304d80;
+                        font-size: 13px;
+                        font-family: 'HelM';
+                        background: url(img/btn_strelka.png) no-repeat left 14px center;
+                        padding-right: 15px;
+                        text-align: right;
+                    }
+                        .directions .slider .btn_parrents .btn:hover {   
+                            border: 1px solid #304d80;
+                            transition: 0.3s ease-out;
+                            -webkit-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+.directions .slider .slick-prev, .directions .slider .slick-next {
+    left: -58px;
+    z-index: 99;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    border: 1px solid #d3d5d7;
+    background: url(img/pagi_left.png) no-repeat center center;
+    margin-top: 24px;
+}
+.directions .slider .slick-next {
+    left: inherit;
+    right: -40px;
+    background: url(img/pagi_right.png) no-repeat center center;
+}
+.directions .slider .slick-prev:before, .slick-next:before {
+    content: '';
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                reviews              */
+/* ---                              --- */
+/* ------------------------------------ */
+.reviews {
+    width: 100%;
+    background: #eceef2;
+    padding-bottom: 63px;
+}
+    .reviews h1 {
+        color: #525151;
+        font-size: 30px;
+        font-family: 'HelM';
+        text-align: center;
+        padding-top: 88px;
+    }
+    .reviews .main {
+        margin-top: 50px;
+        padding: 0 63px 40px 63px;
+        float: left;
+    }
+        .reviews .main .item {
+            width: 326px;
+            float: left;
+            margin-left: 48px;
+        }
+            .reviews .main .item:nth-child(1) {
+                margin-left: 0;
+            }
+            .reviews .main .item:nth-child(3n+4) {
+                margin-left: 0;
+            }
+            .reviews .main .item img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                border: 1px solid #dbdbdb;
+            }
+            .reviews .main .item .item_text {
+                background: #fff;
+                width: 100%;
+                padding: 15px 10px 10px 20px;
+                border-radius: 5px;
+                margin-top: 20px;
+                position: relative;
+            }
+                .reviews .main .item .item_text:before {
+                    content: '';
+                    position: absolute;
+                    top: -7px;
+                    left: 42px;
+                    width: 17px;
+                    height: 7px;
+                    background: url(img/reviews_before.png) no-repeat center center;
+                }
+                .reviews .main .item .item_text span {
+                    color: #252525;
+                    font-size: 17px;
+                    font-family: 'HelM';
+                    padding-bottom: 10px;
+                    display: block;
+                }
+                .reviews .main .item .item_text p {
+                    color: #4c4c4c;
+                    font-size: 15px;
+                    font-family: 'HelR';
+                    line-height: 25px;
+                }
+    .reviews .btn {
+        width: 262px;
+        border: 2px solid #1caff6;
+        border-radius: 5px;
+        line-height: 52px;
+        text-align: right;
+        color: #1794d0;
+        font-size: 16px;
+        font-family: 'HelM';
+        clear: both;
+        padding-right: 30px;
+        margin: 0 auto;
+        background: url(img/reviews_btn_bg.png) no-repeat left 30px center;
+    }
+        .reviews .btn:hover {
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); 
+            -o-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                reviews home            */
+/* ---                              --- */
+/* ------------------------------------ */
+.reviews_home {
+    padding-bottom: 0;
+}
+    .reviews_home .main {
+        padding: 0 63px 0 63px;
+    }
+        .reviews_home .item {
+            margin-bottom: 32px;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                about_us             */
+/* ---                              --- */
+/* ------------------------------------ */
+.about_us {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 55px;
+}
+    .about_us h1 {
+        font-size: 30px;
+        font-family: 'HelM';
+        color: #525151;
+        text-align: center;
+        padding-top: 62px;
+    }
+    .about_us .col p {
+        font-family: 'HelR';
+        font-size: 17px;
+        color: #525151;
+        line-height: 32px;
+    }
+    .about_us .col:nth-child(1) {
+        width: 450px;
+        text-align: right;
+    }
+    .about_us .col:nth-child(2) {
+        width: 654px;
+        margin-left: 90px;
+        padding-top: 30px;
+    }
+    .about_us h2 {
+        font-size: 20px;
+        color: #525151;
+        font-weight: 700;
+        padding-left: 25px;
+        padding-top: 30px
+    }
+    .about_us .main {
+        padding: 0 63px;
+    }
+        .about_us .main .item {
+            position: relative;
+            margin-top: 20px;
+        }
+            .about_us .main .item:before {
+                content: '';
+                position: absolute;
+                width:  24px;
+                height: 17px;
+                background: url(img/galka.png) no-repeat center center;
+                left: -37px;
+                top: 7px;
+            }
+            .about_us .main .item p {
+                color: #525151;
+                font-size: 16px;
+                font-family: 'HelR';
+                line-height: 27px;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                search            */
+/* ---                              --- */
+/* ------------------------------------ */
+.search {
+    width: 100%;
+    background: #0595d3;
+    padding: 30px 0;
+}
+    .search h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        padding-bottom: 20px;
+        padding-top: 40px;
+    } 
+    .search .travel {
+        background: none;
+        border: none;
+    }
+        .search .travel label input {
+            border: 2px solid #ffd93a;
+            background: rgba(224, 224, 224, 0.47);
+            color: #fff;
+        }
+        .search .travel label p {
+            color: #fff;
+            font-family: 'HelB';
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                contact            */
+/* ---                              --- */
+/* ------------------------------------ */
+.contact_home {
+    width: 100%;
+    background: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+    .contact_home h1 {
+        color: #525151;
+        font-size: 30px;
+        padding-top: 62px;
+        text-align: center;
+    }
+        .contact_home .main {
+            padding: 85px 82px 0 82px;
+        }
+            .contact_home .main .item.left {
+                float: left;
+            }
+            .contact_home .main .item.right {
+                float: right;
+            }
+            .contact_home .main .item.left .top_contact p {
+                margin-top: 25px;
+                padding-left: 45px;
+            }
+                .contact_home .main .item.left .top_contact p:nth-child(1) {
+                    margin-top: 0;
+                }
+            .contact_home .main .item.left .top_contact .call {
+                color: #525151;
+                font-size: 22px;
+                font-family: 'HelM';
+                position: relative;
+            }
+                .contact_home .main .item.left .top_contact .call:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 28px;
+                    height: 27px;
+                    background: url(img/call_before.png) no-repeat center center;
+                }
+                .contact_home .main .item.left .top_contact .call span {
+                    font-family: 'HelB';
+                }
+            .contact_home .main .item.left .top_contact .mail {
+                color: #525151;
+                font-size: 22px;
+                font-family: 'HelM';
+                position: relative;
+            }
+                .contact_home .main .item.left .top_contact .mail:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 5px;
+                    width: 28px;
+                    height: 18px;
+                    background: url(img/mail_before.png) no-repeat center center;
+                }
+                .contact_home .main .item.left .time_work {
+                    width: 425px;
+                    border: 1px solid #dedede;
+                    border-bottom: 3px solid #dedede;
+                    border-radius: 3px;
+                    padding: 21px 20px;
+                    margin-top: 88px;
+                }
+                    .contact_home .main .item.left .time_work h2 {
+                        color: #1a90c9;
+                        font-size: 22px;
+                        font-family: 'HelM';
+                        padding-bottom: 20px;
+                    }
+                    .contact_home .main .item.left .time_work p {
+                        color: #525151;
+                        font-size: 17px;
+                        font-family: 'HelR';
+                        position: relative;
+                        padding-left: 35px;
+                    }
+                    .contact_home .main .item.left .time_work p:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: -3px;
+                        width: 24px;
+                        height: 24px;
+                    }
+                    .contact_home .main .item.left .time_work .time_input:before {
+                        background: url(img/operator.png) no-repeat center center;
+                    }
+                    .contact_home .main .item.left .time_work .time_output:before {
+                        background: url(img/24.png) no-repeat center center;
+                    }
+                    .contact_home .main .item.left .time_work .time_night:before {
+                        background: url(img/moon.png) no-repeat center center;
+                    }
+            .contact_home .main .item.right .connect_us .name {
+                color: #525151;
+                font-size: 24px;
+                font-family: 'HelB';
+                position: relative;
+                padding-left: 42px;
+            }
+                .contact_home .main .item.right .connect_us .name:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 6px;
+                    width: 32px;
+                    height: 16px;
+                    background: url(img/connect_us_before.png) no-repeat center center;
+                }
+            .contact_home .main .item.right .connect_us .info {
+                color: #525151;
+                font-size: 15px;
+                line-height: 20px;
+                font-family: 'HelR';
+                width: 335px;
+            }
+            .contact_home .main .item.right .connect_us form {
+                margin-top: 20px;
+            }
+                .contact_home .main .item.right .connect_us form p {
+                    color: #525151;
+                    font-family: 'HelR';
+                    font-size: 16px;
+                    position: relative;
+                }
+                    .contact_home .main .item.right .connect_us form .mail_name:after {
+                        content: '';
+                        position: absolute;
+                        left: 50px;
+                        width: 7px;
+                        height: 8px;
+                        background: url(img/mail_after.png) no-repeat center center;
+                    }
+                .contact_home .main .item.right .connect_us form input {
+                    width: 299px;
+                    border: 1px solid #dedede;
+                    border-radius: 3px;
+                    background: #f7f7f7;
+                    display: block;
+                    margin-top: 10px;
+                    margin-bottom: 20px;
+                    line-height: 41px;
+                    padding-left: 20px;
+                    outline: none;
+                    font-size: 22px;
+                }
+                .contact_home .main .item.right .connect_us form textarea {
+                    max-width: 299px;
+                    min-width: 299px;
+                    min-height: 125px;
+                    border: 1px solid #dedede;
+                    border-radius: 3px;
+                    background: #f7f7f7;
+                    padding-left: 20px;
+                    padding-top: 10px;
+                    font-size: 22px;
+                    margin-top: 10px;
+                }
+            .contact_home .main .item.right .connect_us .btn {
+                width: 202px;
+                line-height: 35px;
+                background: #1a90c9;
+                font-size: 14px;
+                font-family: 'HelB';
+                color: #fff;
+                text-align: center;
+                border: 3px solid #1caff6;
+                border-radius: 3px;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-top: 30px;
+            }
+                .contact_home .main .item.right .connect_us .btn:hover {
+                    background: none;
+                    color: #1a90c9;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                get_reviews           */
+/* ---                              --- */
+/* ------------------------------------ */
+.get_reviews {
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    padding-bottom: 43px;
+}
+    .get_reviews h1 {
+        text-align: center;
+        font-size: 30px;
+        color: #525151;
+        padding-top: 60px;
+        font-family: 'HelM';
+        padding-bottom: 50px;
+    }
+    .get_reviews .leave_reviews {
+        color: #525151;
+        display: inline-block;
+        font-size: 24px;
+        font-family: 'HelM';
+        position: relative;
+        padding-left: 35px;
+    }
+        .get_reviews .leave_reviews:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 23px;
+            height: 23px;
+            background: url(img/leave_reviews_before.png) no-repeat center center;
+        }
+    .get_reviews form {
+        width: 300px;
+        margin: 0 auto;
+        padding-top: 35px;
+    }
+        .get_reviews form p {
+            font-size: 16px;
+            color: #525151;
+            font-family: 'HelR';
+            text-align: left;
+        }
+        .get_reviews form input {
+            width: 100%;
+            border: 1px solid #dedede;
+            border-radius: 3px;
+            background: #f7f7f7;
+            display: block;
+            padding-left: 20px;
+            font-size: 22px;
+            height: 41px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        .get_reviews form textarea {
+            max-width: 100%;
+            min-width: 100%;
+            border: 1px solid #dedede;
+            border-radius: 3px;
+            background: #f7f7f7;
+            display: block;
+            margin-top: 10px;
+            min-height: 125px;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 22px;
+        }
+        .get_reviews form .btn {
+            width: 202px;
+            line-height: 35px;
+            background: #1a90c9;
+            font-size: 14px;
+            font-family: 'HelB';
+            color: #fff;
+            text-align: center;
+            border: 3px solid #1caff6;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 30px;
+        }
+            .get_reviews form .btn:hover {
+                background: none;
+                color: #1a90c9;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                tarif            */
+/* ---                              --- */
+/* ------------------------------------ */
+.page_rates {
+    margin-top: 80px;
+}
+    .page_rates .page_title {
+        color: #525151;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'HelM';
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .page_rates table {
+        width: 1035px;
+        margin: 0 auto 40px;
+        border: 1px solid #e9e9e9;
+        border-collapse: collapse;
+        text-align: center;
+    }
+        .page_rates table tr{
+            height: 53px;
+        }
+        .page_rates table .active{
+            color: #525151;
+            background: #d8f2fd;
+        }
+            .page_rates table .active td{
+                color: #525151;
+            }
+        .page_rates table .main_active{
+            background: #0a87bd;
+            cursor: pointer;
+            color: #fff !important;
+        }
+            .page_rates table tr:first-child{
+                background: #f6fbfc;
+            }
+            .page_rates table tr td, .page_rates table tr th{
+                border: 1px solid #e9e9e9;
+                color: #868686;
+                font-size: 16px;
+            }
+            .page_rates table tr td, .page_rates table tr th{
+                font-weight: normal;
+            }
+            .page_rates table tr td:first-child{
+                color: #1376a5;
+                font-family: 'helM';
+            }
+                .page_rates table tr td a{
+                    display: block;
+                    color: #ffffff;
+                    font-size: 15px;
+                    background: #aadb66;
+                    line-height: 33px;
+                    width: 123px;
+                    border-radius: 4px;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                .page_rates table tr td:last-child{
+                    width: 190px;
+                }
+    .page_rates p {
+        width: 450px;
+        margin: 0 auto;
+        color: #302f2f;
+        font-size: 16px;
+        font-family: 'helB';
+        position: relative;
+        padding-left: 29px;
+        margin-bottom: 17px;
+    }
+        .page_rates p:before {
+            content: '';
+            position: absolute;
+            top: -5px;
+            left: 0;
+            width: 24px;
+            height: 24px;
+            background: url(img/if_before.png) no-repeat center center;
+        }
+    .page_rates .btn {
+        margin: 0 auto;
+        color: #1794d0;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 2px solid #59c4f8;
+        line-height: 50px;
+        width: 222px;
+        text-align: center;
+        font-family: 'helM';
+    }
+        .page_rates .btn:hover {
+            background: #59c4f8;
+            color: #fff;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                service               */
+/* ---                              --- */
+.service_home {
+    margin-top: 80px;
+    padding-bottom: 67px;
+}
+    .service_home .parrents {
+        padding: 0 63px;
+    }
+        .service_home .parrents h1 {
+            padding-top: 60px;
+            text-align: center;
+            color: #525151;
+            font-size: 30px;
+            font-family: 'HelM';
+        }
+        .service_home .parrents .main, .directions_home .directions_parrents .main {
+            margin-top: 50px;
+            border: 1px solid #d7d9db;
+            border-radius: 3px;
+            padding: 0 19px;
+            float: left;
+            width: 100%;
+        }
+            .service_home .parrents .main .item, .directions_home .directions_parrents .main .item {
+                width: 100%;
+                position: relative;
+                float: left;
+                border-bottom: 1px solid #d7d9db;
+                padding-top: 9px;
+                padding-bottom: 14px;
+            }
+            .service_home .parrents .main .item:nth-child(n+2), .directions_home .directions_parrents .main .item:nth-child(n+2) {
+                padding-top: 13px;
+            }
+                .service_home .parrents .main .item:last-child, .directions_home .directions_parrents .main .item:last-child {
+                    border-bottom: 0;
+                }
+                .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+                    width: 397px;
+                    height: 226px;
+                    float: left;
+                    margin-right: 25px;
+                }
+            .service_home .parrents .main .item .item_info, .directions_home .directions_parrents .main .item .item_info {
+                float: left;
+            }
+                .service_home .parrents .main .item .item_info .name, .directions_home .directions_parrents .main .item_info .name {
+                    font-size: 22px;
+                    color: #1a90c9;
+                    font-family: 'HelB';
+                    position: relative;
+                    padding-left: 26px;
+                    margin-bottom: 15px;
+                }
+                    .service_home .parrents .main .item .item_info .name.exs:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 1px;
+                        width: 16px;
+                        height: 24px;
+                        background: url(img/exs_before.png) no-repeat center center;
+                    }
+                    .service_home .parrents .main .item .item_info .name.key:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 2px;
+                        width: 21px;
+                        height: 21px;
+                        background: url(img/key_car_before.png) no-repeat center center;
+                    }
+                .service_home .parrents .main .item .item_info .text, .directions_home .directions_parrents .main .item .item_info .text {
+                    color: #525151;
+                    font-size: 15px;
+                    font-family: 'HelR';
+                    width: 610px;
+                    line-height: 24px;
+                }
+                .service_home .parrents .main .item .btn, .directions_home .directions_parrents .main .item .btn {
+                    position: absolute;
+                    bottom: 14px;
+                    right: 0;
+                    width: 130px;
+                    line-height: 31px;
+                    border: 1px solid #d1d1d1;
+                    border-radius: 5px;
+                    color: #304d80;
+                    font-size: 13px;
+                    font-family: 'HelM';
+                    background: url(img/btn_strelka.png) no-repeat left 14px center;
+                    padding-right: 15px;
+                    text-align: right;
+                }
+                    .service_home .parrents .main .item .btn:hover, .directions_home .directions_parrents .main .item .btn:hover {
+                        border: 1px solid #304d80;
+                    }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                car            */
+/* ---                              --- */
+/* ------------------------------------ */
+.car {
+    margin-top: 80px;
+}
+    .car .parrents_car {
+        padding: 0 63px;
+    }
+        .car .parrents_car h1 {
+            color: #525151;
+            font-size: 30px;
+            font-family: 'HelM';
+            padding-top: 60px;
+            text-align: center;
+        }
+        .car .parrents_car .main {
+            margin-top: 50px;
+            border: 1px solid #d7d9db;
+            border-radius: 3px;
+            padding: 0 51px;
+            float: left;
+            width: 100%;
+        }
+            .car .parrents_car .main .item {
+                padding-top: 20px;
+                padding-bottom: 25px;
+                border-bottom: 1px solid #d7d9db;
+                float: left;
+                width: 100%;
+            }
+                .car .parrents_car .main .item:Last-child {
+                    border-bottom: 0;
+                }
+                .car .parrents_car .main .item .name {
+                    font-size: 22px;
+                    color: #1a90c9;
+                    font-family: 'HelB';
+                    padding-bottom: 20px;
+                }
+                .car .parrents_car .main .item ul {
+                    list-style: none;
+                }
+                    .car .parrents_car .main .item ul li {
+                        float: left;
+                        width: 299px;
+                        height: 184px;
+                        margin-left: 36px;
+                    }
+                        .car .parrents_car .main .item ul li:nth-child(1), .car .parrents_car .main .item ul li:nth-child(3n+4) {
+                            margin-left: 0;
+                        }
+                        .car .parrents_car .main .item ul li a {
+                            position: relative;
+                        }
+                            .car .parrents_car .main .item ul li a:hover span {
+                                opacity: 1;
+                                -webkit-transition: 0.3s ease-out;
+                                -o-transition: 0.3s ease-out;
+                                -moz-transition: 0.3s ease-out;
+                                transition: 0.3s ease-out;
+                            }
+                            .car .parrents_car .main .item ul li a span {
+                                position: absolute;
+                                left: 0;
+                                bottom: 2px;
+                                width: 100%;
+                                text-align: center;
+                                display: block;
+                                font-size: 26px;
+                                color: #fff;
+                                font-family: 'HelM';
+                                background: rgba(5,149,211,0.7);
+                                padding: 23px 0;
+                                opacity: 0;
+                            }
+                            .car .parrents_car .main .item ul li a img {
+                                width: 100%;
+                                height: 100%;
+                            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                directions_home            */
+/* ---                              --- */
+/* ------------------------------------ */
+.directions_home {
+    margin-top: 80px;
+    padding-bottom: 30px;
+}
+    .directions_home .directions_parrents {
+        padding: 0 63px;
+    }
+        .directions_home .directions_parrents h1 {
+            padding-top: 60px;
+            text-align: center;
+            font-family: 'HelM';
+            font-size: 30px;
+            color: #525151;
+        }
+        .directions_home .directions_parrents .main .item .item_info .taxi {
+            color: #828282;
+            font-size: 16px;
+            font-family: 'HelR';
+            margin-bottom: 5px;
+        }
+        .directions_home .directions_parrents .main .item .item_info ul {
+            list-style: none;
+            width: 610px;
+        }
+            .directions_home .directions_parrents .main .item .item_info ul li {
+                font-size: 22px;
+                color: #1a90c9;
+                font-family: 'HelB';
+                position:  relative;
+                padding-left: 18px;
+                display: inline-block;
+                margin-left: 35px;
+            }
+            .directions_home .directions_parrents .main .item .item_info ul li:nth-child(1) {
+                margin-left: 0;
+            }
+                .directions_home .directions_parrents .main .item .item_info ul li:before {
+                    content: '';
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                    width: 12px;
+                    height: 16px;
+                    background: url(img/point.png) no-repeat center center;
+                }
+                .directions_home .directions_parrents .main .item .item_info ul li:nth-child(n+2):after {
+                    content: '';
+                    position: absolute;
+                    top: 9px;
+                    left: -25px;
+                    width: 19px;
+                    height: 6px;
+                    background: url(img/strelka.png) no-repeat center center;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                sth_directions               */
+/* ---                              --- */
+/* ------------------------------------ */
+.sth_directions {
+    margin-top: 80px;
+    padding-bottom: 60px;
+}
+    .sth_directions h1 {
+        padding-top: 60px;
+        text-align: center;
+        color: #525151;
+        font-size: 30px;
+        font-family: 'HelM';
+    }
+    .sth_directions .text {
+        margin-top: 50px;
+        padding: 0 20px;
+    }
+        .sth_directions .text p {
+            color: #525151;
+            font-size: 16px;
+            font-family: 'HelR';
+            line-height: 27px;
+            margin-bottom: 20px;
+        }
+    .sth_directions .slider_sth_directions {
+       margin-top: 40px;
+    } 
+        .sth_directions .slider_sth_directions .item {
+            height: 280px;
+            padding: 0 20px;
+            outline: none;
+        } 
+            .sth_directions .slider_sth_directions img {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                border: 1px solid #b2b2b2;
+            }
+            .sth_directions .slider_sth_directions .abs {
+                position: absolute;
+                bottom: 0;
+                background: rgba(5,149,211,0.7);
+                font-size: 25px;
+                color: #fff;
+                text-align: center;
+                width: 361px;
+                height: 90px;
+                font-family: 'HelM';
+                line-height: 90px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+        .sth_directions .slider_sth_directions .slick-prev, .sth_directions .slider_sth_directions .slick-next {
+           left: 21px;
+            z-index: 99;
+            width: 48px;
+            height: 48px;
+            border: 1px solid #b2b2b2;
+            border-radius: 50%;
+            background: url(img/sth_slider_prev.png) no-repeat center center;
+        }
+        .sth_directions .slider_sth_directions .slick-next {
+            left: inherit;
+            right: 19px;
+            background: url(img/sth_slider_next.png) no-repeat center center;
+        }
+            .sth_directions .slider_sth_directions .slick-prev:before, .sth_directions .slider_sth_directions .slick-next:before {
+                content: '';
+            }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                price_car              */
+/* ---                              --- */
+/* ------------------------------------ */
+.price_car {
+    background: #eceef2;
+}
+    .price_car .name {
+        padding-top: 90px;
+        font-size: 24px;
+        color: #525151;
+        font-family: 'HelR';
+        text-align: center;
+    }
+    .price_car .main {
+        padding: 40px 63px 98px 63px;
+        text-align: center;
+    }
+        .price_car .main .item {
+            display: inline-block;
+            width: 220px;
+            text-align: center;
+            border: 1px solid #d7d9db;
+            border-bottom: 3px solid #d7d9db;
+            border-radius: 5px;
+        }
+            .price_car .main .item .name_car {
+                background: #1a90c9;
+                text-align: center;
+                width: 100%;
+                display: block;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                font-size: 22px;
+                color: #fff;
+                font-family: 'HelR';
+                padding: 24px 0;
+            }
+            .price_car .main .item .content {
+                padding-top: 50px;
+                padding-bottom: 35px;
+                background: #fff;
+            }
+                .price_car .main .item .content .item_img {
+                    width: 100%;
+                    height: 75px;
+                    line-height: 75px;
+                }
+                    .price_car .main .item .content .item_img img {
+                        vertical-align: bottom;
+                    }
+                .price_car .main .item .content p {
+                    color: #525151;
+                    font-size: 30px;
+                    font-family: 'HelR';
+                    margin-top: 35px;
+                }
+                    .price_car .main .item .content p .rub {
+                        font-size: 23px;
+                    }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                sth_form             */
+/* ---                              --- */
+/* ------------------------------------ */
+.sth_form .parrents {
+    padding: 94px 20px 105px 20px;
+    float: left;
+}
+    .sth_form .parrents .item {
+        float: left;
+    }
+    .sth_form .parrents .item.item_1 {
+        width: 696px;
+    }
+        .sth_form .parrents .item h3 {
+            font-size: 24px;
+            color: #525151;
+            font-family: 'HelB';
+            padding-bottom: 35px;
+        }
+            .sth_form .parrents .item form {
+                float: left;
+                width: 100%;
+            }
+                .sth_form .parrents .item .form_child {
+                    float: left;
+                }
+                    .sth_form .parrents .item .form_child:nth-child(2) {
+                        margin-left: 96px;
+                    }
+                    .sth_form .parrents .item .form_child li {
+                        width: 300px;
+                        display: block;
+                    }
+                        .sth_form .parrents .item .form_child li label p {
+                            color: #525151;
+                            font-size: 16px;
+                            font-family: 'HelR';
+                            padding-bottom: 10px;
+                            display:inline-block;
+                        }
+                        .sth_form .parrents .item .form_child li label input, .sth_form .parrents .item .form_child li label select {
+                            width: 100%;
+                            height: 40px;
+                            border: 1px solid #dedede;
+                            border-radius: 3px;
+                            background: #f7f7f7;
+                            padding-left: 12px;
+                            outline: none;
+                            color: #525151;
+                            font-family: 'HelR';
+                            font-size: 14px;
+                            margin-bottom: 20px;
+                            display: block;
+                        }
+                        .sth_form .parrents .item .form_child li label select {
+                            background: url(img/select_bg.png) no-repeat right 16px center, #f7f7f7;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -o-appearance: none;
+                            -moz-appearance: none;
+                            cursor: pointer;
+                        }  
+                        .sth_form .parrents .item .form_child li label textarea {
+                            min-width: 300px;
+                            max-width: 300px;
+                            min-height: 127px;
+                            border: 1px solid #dedede;
+                            border-radius: 3px;
+                            background: #f7f7f7;
+                            padding-left: 12px;
+                            padding-top: 5px;
+                            outline: none;
+                            color: #525151;
+                            font-family: 'HelR';
+                            font-size: 14px;
+                            margin-bottom: 20px;
+                            display: block;
+                        }
+        .sth_form .parrents .item .btn {
+            width: 202px;
+            line-height: 35px;
+            background: #1a90c9;
+            font-size: 14px;
+            font-family: 'HelB';
+            color: #fff;
+            text-align: center;
+            border: 3px solid #1caff6;
+            border-radius: 3px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 7px;
+            float: left;
+        }
+            .sth_form .parrents .item .btn:hover {
+                background: none;
+                color: #1a90c9;
+            }
+    .sth_form .parrents .item.item_2 {
+        width: 400px;
+        margin-left: 64px;
+    }
+        .sth_form .parrents .item.item_2 .route {
+            font-size: 20px;
+            color: #525151;
+            font-family: 'HelR';
+            position: relative;
+            display: inline-block;
+            padding-left: 30px;
+        }
+            .sth_form .parrents .item.item_2 .route:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 24px;
+                height: 24px;
+                background: url(img/if_before.png) no-repeat center center;
+            }
+        .sth_form .parrents .item.item_2 .trip {
+            list-style: none;
+            margin-top: 15px;
+        }
+            .sth_form .parrents .item.item_2 .trip li {
+                display: inline-block;
+                position: relative;
+                font-size: 22px;
+                font-family: 'HelB';
+                color: #1a90c9;
+            }
+            .sth_form .parrents .item.item_2 .trip li:nth-child(n+2) {
+                margin-left: 35px;
+            }
+                    .sth_form .parrents .item.item_2 .trip li:nth-child(n+2):before {
+                        content: '';
+                        position: absolute;
+                        top: 10px;
+                        left: -30px;
+                        width: 19px;
+                        height: 6px;
+                        background: url(img/strelka.png) no-repeat center center;
+                    }
+        .sth_form .parrents .item.item_2 iframe {
+            width: 397px;
+            height: 299px;
+            margin-top: 28px;
+        }
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                footer               */
+/* ---                              --- */
+/* ------------------------------------ */
+footer {
+    width: 100%;
+    background: #e9e9e9;
+    padding: 0 63px;
+}
+    footer .parrent {
+        padding: 0 63px;
+    }
+        footer .top_child.home_index {
+            padding-top: 12px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+        footer .top_child {
+            padding-top: 40px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #d6d6d6;
+        }
+            footer .top_child ul {
+                list-style: none;
+                display: inline-block;
+            }
+                footer .top_child ul li {
+                    margin-left: 28px;
+                    display: inline-block;
+                }
+                    footer .top_child ul li:nth-child(1) {
+                        margin-left: 0;
+                    }
+                    footer .top_child ul li a {
+                        font-size: 15px;
+                        color: #616161;
+                        font-family: 'HelR';
+                        border-bottom: 1px solid transparent;
+                    }
+                        footer .top_child ul li a:hover {
+                            border-bottom: 1px solid #616161;
+                            transition: 0.3s ease-out;
+                            -webkit-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                        }
+        footer .top_child .btn {
+            width: 164px;
+            background: url(img/taxi_bg.png) no-repeat left 19px center, #ffd93a;
+            text-align: right;
+            line-height: 39px;
+            padding-right: 18px;
+            font-family: 'HelB';
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #000;
+            border-radius: 3px;
+            display: inline-block;
+            margin-left: 78px;
+        }
+            footer .top_child .btn:hover {
+                box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75); 
+                -o-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.75);
+            }
+        footer .bottom_child {
+            float: left;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 25px;
+        }
+            footer .bottom_child .contact_info {
+               float: left;
+            }
+                footer .bottom_child .contact_info .number {
+                    font-size: 20px;
+                    color: #1d1d1d;
+                    font-family: 'HelR';
+                    display: inline-block;
+                }
+                    footer .bottom_child .contact_info .number span {
+                        font-family: 'HelB';
+                    }
+                footer .bottom_child .contact_info a {
+                    display: inline-block;
+                    font-size: 17px;
+                    color: #0595d3;
+                    border-bottom: 1px dashed #a1dff2;
+                    margin-left: 15px;
+                }
+                footer .bottom_child .contact_info .mail {
+                    color: #1d1d1d;
+                    font-size: 16px;
+                    font-family: 'HelM';
+                    margin-top: 10px;
+                }
+            footer .bottom_child .all_right {
+               float: right;
+            }
+                footer .bottom_child .all_right p {
+                   color: #6c6c6c;
+                    font-size: 16px;
+                    font-family: 'HelL';
+                    width: 200px;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*            portfolio_page            */
+/* ---                              --- */
+/* ------------------------------------ */
+
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*          page_services_prices        */
+/* ---                              --- */
+/* ------------------------------------ */
+
+
+
+            
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 1200px){
+    .container {
+        width: 1024px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               header                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    header .navigation {
+        margin-left: 15px;
+    }
+        header .navigation li {
+            margin-left: 15px;
+        }
+    header .btn.taxi {
+        background: #ffd93a;
+        text-align: center;
+        padding-right: inherit;
+        width: 100px;
+    }
+    header .contact {
+        margin-left: 10px;
+    }
+        header .contact p {
+            font-size: 18px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               how_work                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .how_work .main {
+        width: 994px;
+    }
+    .how_work .main .item_1 .item_img img {
+        padding-left: 65px;
+    }
+    .how_work .main .item_2 .item_img img {
+        padding-left: 95px;
+    }
+    .how_work .main .item_3 .item_img img {
+        padding-left: 100px;
+    }
+    .how_work .main .item span:after {
+       width: 282px; 
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               directions                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions .slider {
+        width: 1024px;
+    }
+    .directions .slider .item_text {
+        padding-left: 5px;
+    }
+        .directions .slider .item_text span {
+            margin-right: 17px;
+        }
+            .directions .slider .item_text span:before {
+                margin-right: 5px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               .reviews                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .reviews .main .item {
+        width: 257px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               about_us                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .about_us .col:nth-child(1) {
+        width: 390px;
+    }
+    .about_us .col:nth-child(2) {
+        width: 514px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                index_car              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .car .parrents_car .main .item ul li {
+        width: 230px;
+        height: 150px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                search              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .search h2 {
+        padding-top: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                page_rates              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .page_rates table, .page_contact {
+        width: 99%;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .directions_home .directions_parrents h1 {
+        padding-top: 30px;
+    }
+    .service_home .parrents .main, .directions_home .directions_parrents .main {
+        margin-top: 30px;
+    }
+    .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+        width: 300px;
+        height: 215px;
+    }
+    .directions_home .directions_parrents .main .item .item_info ul, .service_home .parrents .main .item .item_info .text, .directions_home .directions_parrents .main .item .item_info .text {
+        width: 503px;
+    }
+    .service_home .parrents .main .item, .directions_home .directions_parrents .main .item {
+        padding-bottom: 25px;
+    }
+    .service_home .parrents .main .item .btn, .directions_home .directions_parrents .main .item .btn {
+        bottom: 10px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_directions                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions .slider_sth_directions .item {
+        height: 250px;
+    }
+        .sth_directions .slider_sth_directions .abs {
+            width: 294px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               price_car               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .price_car .name {
+        padding-top: 50px;
+    }
+    .price_car .main {
+        padding: 40px 63px 50px 63px;
+    }
+        .price_car .main .item {
+            width: 288px;
+            margin-bottom: 10px;
+        }
+     /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_form               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_form .parrents {
+        padding: 60px 20px;
+    }
+        .sth_form .parrents .item.item_1 {
+            width: 578px;
+        }
+            .sth_form .parrents .item .form_child li {
+                width: 240px;
+            }
+                .sth_form .parrents .item .form_child li label textarea {
+                    min-width: 240px;
+                    max-width: 240px;
+                }
+        .sth_form .parrents .item.item_2, .sth_form .parrents .item.item_2 iframe {
+            width: 312px;
+        }
+            .sth_form .parrents .item.item_2 iframe {
+                margin-top: 53px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               footer                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    footer .top_child .btn {
+        margin-left: 0;
+        margin-top: 12px;
+    }
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 1024px){
+    .container {
+        width: 991px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               header               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    header .navigation {
+        margin-left: 23px;
+    }
+        header .navigation li {
+            margin-left: 23px;
+        }
+    header .btn.taxi {
+        display: none;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               home               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .travel {
+        width: 961px;
+    }
+        .travel label input {
+            width: 287px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               how_work               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .how_work .main {
+        width: 961px;
+    }
+    .how_work .main .item_1 .item_img img {
+        padding-left: 60px;
+    }
+    .how_work .main .item_2 .item_img img {
+        padding-left: 90px;
+    }
+    .how_work .main .item_3 .item_img img {
+        padding-left: 95px;
+    }
+    .how_work .main .item span:after {
+       width: 275px; 
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               directions               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions .slider {
+        width: 961px;
+        padding: 0 20px;
+        margin-top: 30px;
+    }
+    .directions .slider .item_text {
+        padding: 0 20px 25px 20px;
+    }
+    .directions .slider .slick-prev {
+        left: -30px;
+    }
+    .directions .slider .slick-next {
+        right: -10px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               reviews               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .reviews .main .item {
+        width: 246px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               about_us              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .about_us .col:nth-child(1) {
+        width: 380px;
+    }
+    .about_us .col:nth-child(2) {
+        width: 491px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                index_car              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .car .parrents_car .main {
+        float: none;
+    }
+        .car .parrents_car .main .item {
+            float: none;
+            text-align: center;
+        }
+            .car .parrents_car .main .item ul li {
+                float: none;
+                display: inline-block;
+                margin-left: 16px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                page_rates              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .page_rates table tr td:last-child {
+        width: 130px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .directions_home .directions_parrents .main .item .item_info ul, .service_home .parrents .main .item .item_info .text, .directions_home .directions_parrents .main .item .item_info .text {
+        width: 480px;
+    }
+    .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+        width: 290px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                service             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .service_home .parrents h1 {
+        padding-top: 30px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_directions                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions .slider_sth_directions .item {
+        height: 230px;
+    }
+        .sth_directions .slider_sth_directions .abs {
+            width: 282px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_form               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_form .parrents .item.item_1 {
+        width: 545px;
+    }
+        .sth_form .parrents .item .form_child li {
+            width: 224px;
+        } 
+            .sth_form .parrents .item .form_child li label textarea {
+                min-width: 224px;
+                max-width: 224px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               footer              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    footer {
+        padding: 0;
+    }
+        footer .parrent {
+            padding: 0 60px;
+        }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 991px){
+    .container {
+        width: 767px;
+    }
+    header {
+        box-shadow: none;
+        -webkit-box-shadow: none;
+        -o-box-shadow: none;
+        -moz-box-shadow: none;
+        background: none;
+    }
+        header .top_head {
+            float: none;
+            padding-left: 20px;
+            text-align: center;
+        }
+            header .logo {
+                padding-left: 0;
+                float: none;
+            }
+            header .navigation {
+                margin-left: 0;
+                float: none;
+            }
+                header .navigation li {
+                    display: block;
+                    float: none;
+                    margin-left: 0;
+                }
+                    header .navigation li a {
+                        line-height: 40px;
+                        color: #000;
+                    }
+            header .contact {
+                float: none;
+            }
+                header .contact p {
+                    color: #000;
+                }
+                header .contact .btn span {
+                    color: #fff;
+                    border-bottom: none;
+                }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               home              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .home {
+        margin-top: 0;
+        padding-bottom: 20px;
+    }
+        .travel {
+            width: 767px;
+            padding: 0 30px;
+        }
+            .travel label input {
+                width: 234px;
+            }
+            .travel label .btn {
+                width: 160px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               service              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .service {
+        background: none;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               how_work              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .how_work .main {
+        width: 737px;
+    }
+        .how_work .main .item_1 .item_img img {
+            padding-left: 23px;
+        } 
+        .how_work .main .item_2 .item_img img {
+            padding-left: 51px;
+        }
+        .how_work .main .item_3 .item_img img {
+            padding-left: 61px;
+        }
+        .how_work .main .item span:after {
+            width: 200px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               directions              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions .slider {
+        width: 737px;
+        padding: 0 55px;
+    }
+        .directions .slider .item_text {
+            padding: 0 25px 25px 25px;
+        }
+    .directions .slider .slick-prev {
+        left: 0;
+    }
+    .directions .slider .slick-next {
+        right: 19px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               reviews              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .reviews {
+        padding-bottom: 20px;
+    }
+        .reviews h1 {
+            padding-top: 20px;
+        }
+        .reviews .main {
+            float: none;
+            text-align: center;
+            padding: 0; 
+            margin-top: 30px;
+        }
+            .reviews .main .item {
+                float: none;
+                display: inline-block;
+                margin-bottom: 20px;
+                text-align: left;
+            }
+            .reviews .main .item:last-child {
+                margin-left: 0;
+            }
+                .reviews .btn {
+                    background: url(img/reviews_btn_bg.png) no-repeat left 20px center;
+                    width: 246px;
+                    padding-right: 20px;
+                }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               about_us             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .about_us .col:nth-child(1) {
+        display: none;
+    }
+    .about_us .col:nth-child(2) {
+        margin-left: 0;
+        width: 737px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                index_car              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .car {
+        margin-top: 0;
+    }
+        .car .parrents_car .main .item {
+            padding-bottom: 10px;
+        }
+            .car .parrents_car .main .item ul li {
+                margin-bottom: 10px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                contact              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .contact_home {
+        padding-top: 0;
+        padding-bottom: 20px;
+    }
+        .contact_home .main {
+            padding: 10px 30px 0 30px;
+        }
+            .contact_home .main .item.left, .contact_home .main .item.right {
+                float: none;
+                text-align: center;
+            }
+                .contact_home .main .item.left .top_contact .call {
+                    margin-right: 10px;
+                }
+                .contact_home .main .item.left .top_contact .call, .contact_home .main .item.left .top_contact .mail {
+                    display: inline-block;
+                    margin-bottom: 20px
+                }
+                .contact_home .main .item.left .time_work {
+                    margin: 0 auto;
+                }
+                .contact_home .main .item.right .connect_us .name {
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+                .contact_home .main .item.right .connect_us .info, .contact_home .main .item.right .connect_us form input {
+                    margin: 0 auto;
+                }
+                .contact_home .main .item.right .connect_us form p, .contact_home .main .item.right .connect_us form input {
+                    margin-bottom: 10px;
+                }
+                .contact_home .main .item.right .connect_us form textarea {
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+                .contact_home .main .item.right .connect_us form .mail_name {
+                    display: inline-block;
+                }
+                .contact_home .main .item.right .connect_us .btn {
+                    margin: 0 auto;
+                }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                page_rates             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .page_rates {
+        margin-top: 0;
+    }
+    .page_rates table tr td a {
+        width: 65px;
+        font-size: 13px;
+        line-height: 26px;
+    }
+    .page_title {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 30px 5px;
+    }
+    .page_rates table tr td:last-child {
+        width: 100px;
+    }
+    .page_rates table tr {
+        height: 45px;  
+    }
+    .page_rates table tr td, .page_rates table tr th {
+        font-size: 12px;
+    }
+    .page_rates table, .form_order .main_form, .form_order .col_3 {
+        margin: 0 auto 15px;
+    }
+    .page_rates .fill_form {
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .page_rates p, .page_contact .col_1 .time_work .descrip  {
+        font-size: 15px;
+    }
+    .page_rates table tr td, .page_rates table tr th {
+        font-size: 10px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .directions_home {
+        margin-top: 0;
+    }
+    .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+        margin: 0 auto;
+        float: none;
+        display: block;
+        width: 350px;
+        height: 226px;
+    }
+    .service_home .parrents .main .item .item_info, .directions_home .directions_parrents .main .item .item_info {
+        float: none;
+        margin-top: 20px;
+    }
+    .service_home .parrents .main .item .item_info, .directions_home .directions_parrents .main .item .item_info {
+        padding: 0 50px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                get_reviews             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .get_reviews {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+    .get_reviews h1 {
+        padding-bottom: 20px;
+    }
+    .get_reviews form {
+        padding-top: 15px;
+    }
+    .reviews .main {
+        padding-top: 20px;
+    }
+    .reviews .main .item:nth-child(2n+3) {
+        margin-left: 0;
+    }
+    .reviews .main .item:nth-child(3n+4) {
+        margin-left: 48px;
+    }
+    .reviews .main .item:last-child {
+        margin-left: 48px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                service             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .service_home {
+        margin-top: 0;
+        padding-bottom: 30px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_directions                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions .slider_sth_directions .abs {
+        width: 335px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_form               */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions {
+        margin-top: 0;
+    }
+        .sth_directions .text {
+            margin-top: 30px;
+        }
+        .sth_form .parrents {
+            padding: 40px 20px;
+        }
+            .sth_form .parrents, .sth_form .parrents .item {
+                float: none;
+                margin: 0 auto;
+            }
+            .sth_form .parrents .item.item_1 {
+                width: 640px;
+            }
+            .sth_form .parrents .item.item_2 {
+                clear: both;
+                margin: 0 auto;
+                padding-top: 30px;
+                width: 640px;
+            }
+            .sth_form .parrents .item.item_2 iframe {
+                margin-top: 15px;
+                width: 640px;
+            }
+                .sth_form .parrents .item .form_child li {
+                    width: 272px;
+                } 
+                    .sth_form .parrents .item .form_child li label textarea {
+                        min-width: 272px;
+                        max-width: 272px;
+                    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               footer             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    footer .top_child ul li {
+        margin-bottom: 5px;
+    }
+        footer .top_child ul li:nth-child(7) {
+            margin-left: 0;
+        }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 767px){
+    .container {
+        width: 480px;
+    }  
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               home             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .travel {
+        width: 450px;
+        height: auto;
+        text-align: center;
+    }
+        .travel label {
+            float: none;
+            padding-bottom: 10px;
+            display: block;
+        }
+            .travel label:nth-child(2) {
+                margin: 0;
+                padding: 0;
+                display: block;
+                padding-top: 10px;
+            }
+            .travel label p {
+                text-align: left;
+            }
+            .travel label input {
+                width: 100%;
+            }
+            .travel label .btn {
+                margin: 0 auto;
+                width: 210px;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               service             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .service {
+        padding-bottom: 20px;
+    }
+        .service .item .item_child {
+            float: none;
+            margin-top: 20px;
+        }
+            .service .item .item_child:nth-child(2) {
+                float: none;
+            }
+            .service .item .item_child .img_child, .service .item .item_child .text_child {
+                display: inline-block;
+                float: none;
+            }
+            .service .item .item_child .text_child {
+                width: 320px;
+            }
+                .service .item .item_child .img_child img {
+                    vertical-align: text-bottom;
+                }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               how_work             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .how_work {
+        padding-bottom: 20px;
+    }
+        .how_work h2 {
+            padding-top: 20px;
+        }
+        .how_work .main {
+            width: 450px;
+        }
+            .how_work .main .item {
+                width: 100%;
+                float: none;
+                margin-bottom: 20px;
+            }
+                .how_work .main .item .item_img {
+                    height: auto;
+                }
+                    .how_work .main .item_1 .item_img img {
+                        padding-left: 125px;
+                    }
+                    .how_work .main .item_2 .item_img img, .how_work .main .item_3 .item_img img {
+                        padding-left: 155px;
+                    }
+                .how_work .main .item p {
+                    width: 100%;
+                }
+                .how_work .main .item span {
+                    margin: 0 auto;
+                }
+                    .how_work .main .item span:after {
+                        width: 0;
+                    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions {
+        padding-bottom: 20px;
+    }
+        .directions h1 {
+            padding-top: 20px;
+        }
+        .directions .slider {
+            width: 450px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               about_us              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .about_us {
+        padding-bottom: 20px;
+    }
+        .about_us h1 {
+            padding-top: 20px;
+        }
+        .about_us .col:nth-child(2) {
+            width: 450px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                index_car              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .car .parrents_car .main {
+        padding: 0 10px;
+        margin-top: 25px;
+    }
+        .car .parrents_car .main .item ul li {
+            margin-left: 0;
+            width: 295px;
+            height: 180px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               reviews              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .reviews .main .item {
+        margin-left: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               contact              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .contact_home .main {
+        padding: 10px 10px;
+    }
+    .contact_home .main .item.left .top_contact p {
+        margin-top: 0;
+    }
+    .contact_home .main .item.left .time_work p {
+        display: inline-block;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               page_rates             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .page_rates table tr td a {
+        width: 60px;
+        font-size: 11px;
+        line-height: 21px;
+    }
+    .page_rates table tr {
+        height: 40px;
+    }
+    .page_rates table tr td:last-child {
+        width: 70px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+        width: 294px;
+        height: 210px;
+    }
+    .service_home .parrents .main .item .item_info, .directions_home .directions_parrents .main .item .item_info {
+        padding: 0;
+    }
+    .directions_home .directions_parrents .main .item .item_info ul, .service_home .parrents .main .item .item_info .text, .directions_home .directions_parrents .main .item .item_info .text {
+        width: 294px;
+    }
+     /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                get_reviews             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .reviews .main .item, .reviews .main .item:nth-child(3n+4), .reviews .main .item:last-child {
+        margin-left: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_directions                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions {
+        padding-bottom: 30px;
+    }
+        .sth_directions .slider_sth_directions .item {
+            padding: 0;
+            height: 300px;
+        }
+            .sth_directions .slider_sth_directions .abs {
+                width: 460px;
+            }
+        .sth_directions .slider_sth_directions .slick-prev {
+            left: 1px;
+        }
+        .sth_directions .slider_sth_directions .slick-next {
+            right: 1px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                price_car                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .price_car .name {
+        padding-top: 30px;
+    }
+    .price_car .main {
+        padding: 20px 20px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_form                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_form .parrents {
+        padding: 20px 0;
+    }
+    .sth_form .parrents .item h3 {
+        text-align: center;
+    }
+    .sth_form .parrents .item.item_1 {
+        width: 460px;
+    }
+    .sth_form .parrents .item form {
+        float: none;    
+    }
+    .sth_form .parrents .item .form_child {
+        float: none;
+        width: 350px;
+        margin: 0 auto;
+    }
+    .sth_form .parrents .item .form_child li {
+        width: 350px;
+    }
+    .sth_form .parrents .item .form_child:nth-child(2) {
+        margin: 0 auto;
+    }
+    .sth_form .parrents .item .form_child li label textarea {
+        min-width: 350px;
+        max-width: 350px;
+    }
+    .sth_form .parrents .item .btn {
+        margin-left: 56px;
+        float: none;
+    }
+    .sth_form .parrents .item.item_2, .sth_form .parrents .item.item_2 iframe {
+        width: 460px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               footer             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    footer .top_child {
+        text-align: center;
+    }
+        footer .top_child ul li {
+            display: block;
+            margin-left: 0;
+        }
+    footer .top_child .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    footer .bottom_child .contact_info, footer .bottom_child .all_right {
+        float: none;
+    }
+    footer .bottom_child .all_right {
+        margin-top: 10px;
+    }
+        footer .bottom_child .all_right p {
+            margin: 0 auto;
+        }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 480px){
+    .container {
+        width: 320px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               home            */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .home .text_home {
+        width: 300px;
+    }
+    .travel {
+        width: 300px;
+    }
+        .travel label .btn {
+            width: 234px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               service          */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .service .item .item_child {
+        text-align: center;
+    }
+        .service .item .item_child .text_child {
+            width: 300px;
+        }
+            .service .item .item_child .text_child h3 {
+                width: auto;
+                margin: 0 auto;
+            }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               how_work          */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .how_work .main {
+        width: 300px;
+    }
+        .how_work .main .item_1 .item_img img {
+            padding-left: 50px;
+        }
+        .how_work .main .item_2 .item_img img, .how_work .main .item_3 .item_img img {
+            padding-left: 79px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               directions          */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions .slider {
+        width: 300px;
+        padding: 0 0 0 10px;
+    }
+        .directions .slider .slick-prev {
+            left: 11px;
+        }
+        .directions .slider .slick-next {
+            right: 21px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               about_us          */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .about_us .col:nth-child(2) {
+        width: 300px;
+        text-align: center;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               search          */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .search {
+        padding: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               index_car         */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .car .parrents_car {
+        padding: 0;
+    }
+    .car .parrents_car .main .item ul li {
+        width: 275px;
+        height: 170px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               contact              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .contact_home .main {
+        padding: 0;
+    }
+        .contact_home .main .item.left .top_contact .mail {
+            font-size: 19px;
+        }
+        .contact_home .main .item.left .time_work {
+            width: 300px;
+        }
+            .contact_home .main .item.left .time_work p {
+                margin-bottom: 10px;
+                padding-left: 65px;
+                text-align: left;
+            }
+        .contact_home .main .item.right .connect_us .info {
+            width: 300px;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               page_rates              */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .page_rates p {
+        font-size: 13px;
+        width: 200px;
+    }
+    .page_rates table tr td a {
+        width: 42px;
+        font-size: 9px;
+        line-height: 16px;
+    }
+    .page_rates table tr td:last-child {
+        width: 45px;
+    }
+    .page_rates table tr {
+        height: 30px;
+    }
+    .page_rates table tr:first-child th{
+        font-size: 8px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                sth_directions             */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .directions_home .directions_parrents {
+        padding: 0;
+    }
+    .service_home .parrents .main .item img, .directions_home .directions_parrents .main .item img {
+        width: 260px;
+        height: 190px;
+    }
+    .directions_home .directions_parrents .main .item .item_info ul, .service_home .parrents .main .item .item_info .text, .directions_home .directions_parrents .main .item .item_info .text {
+        width: 260px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*                service            */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    .service_home .parrents {
+        padding: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_directions                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_directions .slider_sth_directions .item {
+        height: 250px;
+    }
+    .sth_directions .slider_sth_directions .abs {
+        width: 300px;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               price_car                 */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .price_car .name {
+        margin-bottom: 20px;
+    }
+    .price_car .main {
+        padding: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               sth_form                */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .sth_form .parrents .item.item_1, .sth_form .parrents .item .form_child, .sth_form .parrents .item .form_child li, .sth_form .parrents .item.item_2, .sth_form .parrents .item.item_2 iframe {
+        width: 300px;
+    }
+    .sth_form .parrents .item .form_child li label textarea {
+        min-width: 300px;
+        max-width: 300px;
+    }
+    .sth_form .parrents .item .btn {
+        margin: 0 auto;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               footer         */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    footer .parrent {
+        padding: 0;
+    }
+        footer .bottom_child {
+            float: none;
+            text-align: center;
+        }
+        footer .bottom_child .contact_info .number, footer .bottom_child .contact_info a {
+            display: block;
+        }
+        footer .bottom_child .contact_info a {
+            margin-left: 0;
+            margin-top: 5px;
+            border-bottom: 0;
+        }
+}
+@media (max-width: 320px){
+    .container {
+        width: 300px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    /* ---                              --- */
+    /*               slider        */
+    /* ---                              --- */
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .directions .slider {
+        padding: 0 0 0 15px;
+    }
+        .directions .slider .slick-prev {
+            left: 16px;
+        } 
+}
