@@ -1,0 +1,4389 @@
+@font-face {
+	font-family: 'helBL';
+	src: url('fonts/GothamPro-Black.eot');
+	src: local('☺'), url('fonts/GothamPro-Black.woff') format('woff'), url('fonts/GothamPro-Black.ttf') format('truetype'), url('fonts/GothamPro-Black.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helM';
+	src: url('fonts/GothamPro-Medium.eot');
+	src: local('☺'), url('fonts/GothamPro-Medium.woff') format('woff'), url('fonts/GothamPro-Medium.ttf') format('truetype'), url('fonts/GothamPro-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'hel';
+	src: url('fonts/GothamPro.eot');
+	src: local('☺'), url('fonts/GothamPro.woff') format('woff'), url('fonts/GothamPro.ttf') format('truetype'), url('fonts/GothamPro.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helB';
+	src: url('fonts/GothamPro-Bold.eot');
+	src: local('☺'), url('fonts/GothamPro-Bold.woff') format('woff'), url('fonts/GothamPro-Bold.ttf') format('truetype'), url('fonts/helveticaneuecyr-bold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'helL';
+	src: url('fonts/GothamPro-Light.eot');
+	src: local('☺'), url('fonts/GothamPro-Light.woff') format('woff'), url('fonts/GothamPro-Light.ttf') format('truetype'), url('fonts/GothamPro-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                header             */
+/* ---                              --- */
+/* ------------------------------------ */
+header {
+    position: fixed;
+    left: 264px;
+    width: 100%;
+    z-index: 999;
+}
+header.other {
+    left: 117px;
+}
+    header .top_menu {
+        list-style: none;
+        float: left;
+        background: #070a13;
+        padding-right: 1px;
+        width: 876px;
+        padding-top: 9px;
+    }
+    header.other .top_menu {
+        width: 1023px;
+    }
+         header .top_menu li {
+            float: left;
+            margin-left: 53px;
+         }
+        header .top_menu li.active {
+            border-bottom: 1px solid #2297f4;
+         }
+             header .top_menu li:nth-child(1) {
+                margin-left: 0;
+             }
+             header .top_menu li a {
+                color: #b5bdc2;
+                font-size: 12px;
+                display: block;
+                padding-top: 9px;
+                padding-bottom: 9px;
+             }
+                 header .top_menu li a:hover {
+                    color: #2297f4;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                  }
+             header .top_menu li.search {
+                position: relative;
+                margin-left: 47px;
+             }
+                 header .top_menu li.search .search_btn {
+                    position: absolute;
+                    left: 0;
+                    top: -10px;
+                    width: 34px;
+                    height: 31px;
+                    background: url(img/search_bg.png) no-repeat center center;
+                 }
+                 header .top_menu li input {
+                    width: 363px;
+                    height: 31px;
+                    background: #0d1322;
+                    border: 0;
+                    outline: none;
+                    padding-left: 34px;
+                    color: #b5bdc2;
+                    font-size: 14px;
+                }
+                    header .top_menu li input::placeholder {
+                        color: #b5bdc2;
+                        font-size: 12px;
+                    }
+             header .top_menu li.login {
+                margin-left: 47px;
+             }
+                 header .top_menu li.login a {
+                    padding: 9px 18px;
+                 }
+                     header .top_menu li.login:hover a {
+                        background: #0d1322;
+                        -webkit-transition: 0.3s ease-out;
+                        -o-transition: 0.3s ease-out;
+                        -moz-transition: 0.3s ease-out;
+                        transition: 0.3s ease-out;
+                     }
+                 header .top_menu li.sign_up {
+                    margin-left: 3px;
+                 }
+                     header .top_menu li.sign_up a {
+                        background: #0d1322;
+                        padding: 9px 18px;
+                     }
+                     header .top_menu li.language {
+                        float: right;
+                        margin-right: 6px;
+                        margin-left: 0;
+                     }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                wrapper_left             */
+/* ---                              --- */
+/* ------------------------------------ */
+    .message {
+        position: fixed;
+        z-index: 999;
+        left: 100px;
+        bottom: 50px;
+    }
+    .home .wrapper_left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 265px;
+        height: 100%;
+        background: #0a0e1a;
+        overflow-y: hidden;
+    }
+        .home .wrapper_left .name_logo, .home .wrapper_left.other .name_logo {
+            color: #dfdfdf;
+            font-size: 17px;
+            text-transform: uppercase;
+            display: block;
+            padding: 15px 0;
+        }
+            .home .wrapper_left .name_logo {
+                color: #dfdfdf;
+                font-size: 17px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+                .home .wrapper_left .name_logo span {
+                    font-family: 'helB';
+                }
+        .home .wrapper_left .user {
+            border-top: 1px solid #0f1629;
+            float: left;
+            width: 100%;
+            padding-bottom: 15px;
+        }
+            .home .wrapper_left .user .logo {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-left: 30px;
+                margin-top: 15px;
+            }
+                .home .wrapper_left .user .name {
+                    float: left;
+                    padding-left: 12px;
+                    padding-top: 13px;
+                }
+                .home .wrapper_left .user .name.admin {
+                    padding-left: 10px;
+                }
+                .home .wrapper_left .user .name.other {
+                    padding-top: 20px;
+                }
+                .home .wrapper_left .user .name.other .money {
+                    font-size: 14px;
+                    color: #fff;
+                    position: relative;
+                    border: 0;
+                    line-height: inherit;
+                    padding: 0 0 0 10px;
+                    border-radius: 0;
+                }
+                    .home .wrapper_left .user .name.other .money:before {
+                        content: '$';
+                        position: absolute;
+                        left: 0;
+                    }
+                    .home .wrapper_left .user .name.other .money:after {
+                        content: '';
+                        position: absolute;
+                        right: -28px;
+                        top: -5px;
+                        width: 26px;
+                        height: 26px;
+                        background: url(img/add_other.png) no-repeat center center;
+                    }
+                    .home .wrapper_left .user .name p {
+                        line-height: 18px;
+                    }
+                    .home .wrapper_left .user .name .name_user {
+                        font-size: 14px;
+                        color: #fff;
+                        margin-bottom: 7px;
+                    }
+                    .home .wrapper_left .user .name.other .name_user {
+                        margin-bottom: 5px;
+                    }
+                    .home .wrapper_left .user .name .money, .home .wrapper_left .user .name .deposit {
+                        position: relative;
+                        display: inline-block;
+                        border: 1px solid #2297f4;
+                        border-radius: 3px;
+                        text-align: center;
+                        line-height: 26px;
+                        padding: 0 8px;
+                        box-sizing: border-box;
+                        -moz-box-sizing: border-box; /*Firefox 1-3*/
+                        -webkit-box-sizing: border-box; /* Safari */
+                    }
+                        .home .wrapper_left .user .name .money, .home .wrapper_left .user .name .deposit span {
+                            font-size: 14px;
+                            color: #2297f4;
+                        }
+                        .home .wrapper_left .user .name a.active {
+                            background: #2297f4;
+                            color: #fff;
+                        }
+                    .home .wrapper_left .user .name .deposit {
+                        color: #2297f4;
+                        font-size: 13px;
+                        width: 84px;
+                        text-align: left;
+                        margin-left: 2px;
+                        padding-left: 8px;
+                    }
+                        .home .wrapper_left .user .name .deposit:after {
+                            content: '';
+                            position: absolute;
+                            right: 3px;
+                            top: 3px;
+                            width: 20px;
+                            height: 20px;
+                            background: url(img/add.png) no-repeat center center;
+                        }
+            .home .wrapper_left nav {
+                clear: both;
+                display: block;
+            }
+                .home .wrapper_left nav .tab {
+                    list-style: none;
+                    border-top: 1px solid #0f1629;
+                    border-bottom: 1px solid #0f1629;
+                    float: left;
+                }
+                    .home .wrapper_left nav .tab li {
+                        width: 51px;
+                        border-left: 1px solid #0f1629;
+                        float: left;
+                        font-size: 13px;
+                        color: #b5bdc2;
+                        text-align: center;
+                        height: 39px;
+                        padding: 11px 0;
+                        position: relative;
+                    }
+                        .home .wrapper_left nav .tab li.active {
+                            background: #2297f4;
+                        }
+                        .home .wrapper_left nav .tab li .abs {
+                            position: absolute;
+                            top: 3px;
+                            right: 10px;
+                            width: 14px;
+                            line-height: 14px;
+                            height: 14px;
+                            background: #2297f4;
+                            border-radius: 50%;
+                            font-size: 10px;
+                            color: #fff;
+                            font-family: 'helM';
+                        }
+                    .home .wrapper_left nav .tab li.bets {
+                        width: 109px;
+                    }
+                        .home .wrapper_left nav .tab li:hover {
+                            background: rgba(30, 129, 210, 0.4);
+                            -webkit-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                            transition: 0.3s ease-out;
+                            cursor: pointer;
+                        }
+                        .home .wrapper_left nav .tab li:nth-child(1) {
+                            border-left: none;
+                        }
+                        .home .wrapper_left nav .tab li.bets a {
+                            color: #fff;
+                        }
+                .home .wrapper_left .menu_nav {
+                    clear: both;
+                }
+                    .home .wrapper_left .menu_nav .item {
+                        border-bottom: 1px solid #0f1629;
+                        height: 55px;
+                    }
+                        .home .wrapper_left .menu_nav .item a {
+                            color: #fff;
+                            font-size: 14px;
+                            display: block;
+                            padding: 0 31px;
+                        }
+                            .home .wrapper_left .menu_nav .item a {
+                                color: #fff;
+                                font-size: 14px;
+                                display: block;
+                                padding: 0 31px;
+                            }
+                        .home .wrapper_left .menu_nav .item  .parrents_img {
+                            height: 55px;
+                            width: 29px;
+                            display: inline-block;
+                            text-align: left;
+                            line-height: 55px;
+                            position: relative;
+                        }
+                            .home .wrapper_left .menu_nav .item  .parrents_img .logo_view {
+                                vertical-align: middle;
+                            }
+                    .home .wrapper_left .menu_nav .item.active {
+                        background: #2297f4;
+                    }
+                            .home .wrapper_left .menu_nav .item.active  .parrents_img .logo_active {
+                                position: absolute;
+                                left: 0;
+                                top: 21px;
+                            }
+                            .home .wrapper_left .menu_nav .item .parrents_img .logo_active {
+                                position: absolute;
+                                left: -1000%;
+                                top: 21px;
+                            }
+
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .home .wrapper_left.other {
+        width: 113px;
+        overflow-y: inherit;
+    }
+        .home .wrapper_left.other .user {
+            text-align: center;
+            padding-bottom: 13px;
+        }
+            .home .wrapper_left.other .user .logo {
+                float: none;
+                margin-left: 0;
+                margin-bottom: 7px;
+            }
+            .home .wrapper_left.other .user .name {
+                padding-top: 0;
+                padding-left: 0;
+            }
+            .home .wrapper_left .user .money {
+                margin-bottom: 9px;
+            }
+        .home .wrapper_left.other nav .tab {
+            border: 0;
+            float: left;
+            border-bottom: 1px solid #0f1629;
+        }
+        .home .wrapper_left.other nav .tab li.bets {
+            float: none;
+            border-top: 1px solid #0f1629;
+            border-bottom: 1px solid #0f1629;
+            display: block;
+            width: 113px;
+        }
+        .home .wrapper_left.other nav .tab li {
+            width: 33.3333%;
+            height: 54px;
+            line-height: 54px;
+            padding: 0;
+        }
+            .home .wrapper_left.other nav .tab li:nth-child(2) {
+                border-left: 0;
+            }
+        .home .wrapper_left.other .menu_nav .item a {
+            position: relative;
+            height: 100%;
+            padding-top: 17px;
+            padding-left: 46px;
+        }
+            .home .wrapper_left.other .menu_nav .item a:hover .link_after {
+                left: 78px;
+                -webkit-transition: 0.2s ease-out;
+                -o-transition: 0.2s ease-out;
+                -moz-transition: 0.2s ease-out;
+                transition: 0.2s ease-out;
+            }
+            .home .wrapper_left.other .menu_nav .item .link_after {
+                position: absolute;
+                top: 0px;
+                padding-top: 18px;
+                left: -1000%;
+                height: 36px;
+                width: 100%;
+                display: block;
+                background: #0a0e1a;
+                color: #fff;
+                z-index: 99;
+                font-size: 14px;
+            }
+                .home .wrapper_left.other .menu_nav .item .link_after:hover {
+                    color: #2297f4;
+                    -webkit-transition: 0.2s ease-out;
+                    -o-transition: 0.2s ease-out;
+                    -moz-transition: 0.2s ease-out;
+                    transition: 0.2s ease-out;
+                }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .home .wrapper_left .sign_in {
+        border-top: 1px solid #0f1629;
+        border-bottom: 1px solid #0f1629;
+        text-align: center;
+        padding: 20px 0;
+    }
+        .home .wrapper_left .sign_in p {
+            font-size: 14px;
+            color: #fff;
+            line-height: 18px;
+        }
+        .home .wrapper_left .sign_in .quetions {
+            font-family: 'helM';
+        }
+        .home .wrapper_left .sign_in .login, .home .wrapper_left .sign_in .sign_up {
+            display: inline-block;
+            color: #b5bdc2;
+            font-size: 12px;
+            padding: 10px 20px;
+            margin-top: 15px;
+        }
+        .home .wrapper_left .sign_in a:hover {
+            background: #0d1322;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+        .home .wrapper_left .sign_in a.active {
+            background: #2297f4;
+            color: #fff;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content               */
+/* ---                              --- */
+/* ------------------------------------ */
+.content {
+    width: 876px;
+    margin-left: 264px;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+}
+.content.other {
+    width: 1023px;
+    margin-left: 117px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.home              */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.home, .content.category {
+    padding-bottom: 63px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.game              */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.game {
+    padding-bottom: 61px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.about              */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.about {
+    padding-bottom: 185px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.my_profile              */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.my_profile {
+    padding-bottom: 400px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.sign_in              */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.sign_in {
+    padding-bottom: 479px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.my_bets             */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.my_bets {
+    padding-bottom: 335px;
+}
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                slider_home               */
+/* ---                              --- */
+/* ------------------------------------ */
+.slider_home {
+    overflow: hidden;
+    height: 262px;
+    width: 100%;
+}
+    .slider_home .item {
+        position: relative;
+        width: 100%;
+        outline: none;
+    }
+        .slider_home .abs_sl {
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 403px;
+            background: rgba(10, 14, 26, 0.9);
+            padding: 0 26px;
+            z-index: 99;
+        }
+            .slider_home .abs_sl .name {
+                font-size: 28px;
+                font-family: 'helM';
+                color: #fff;
+                padding-top: 70px;
+            }
+            .slider_home .abs_sl .info {
+                font-size: 14px;
+                color: #fff;
+                padding-top: 10px;
+            }
+        .slider_home img {
+            float: right;
+            width: 100%;
+        }
+    /* ------------------------------------ */
+    /* ------------------------------------ */
+    .slider_home .slick-dots {
+        bottom: 26px;
+        left: 25px;
+        text-align: left;
+    }
+        .slider_home .slick-dots li {
+            margin: 0 6px;
+            width: 12px;
+            height: 12px;
+        }
+           .slider_home .slick-dots li button {
+                border: 1px solid #fff;
+                border-radius: 50%;
+                width: 11px;
+                height: 11px;
+            }
+                .slider_home .slick-dots li button:before {
+                    content: '';
+                    background: #fff;
+                    border-radius: 50%;
+                    width: 6px;
+                    height: 6px;
+                    line-height: 6px;
+                    opacity: 0;
+                    left: 3px;
+                    top: 3px;
+                }
+                .slider_home .slick-dots li.slick-active button:before {
+                    opacity: 1;
+                    color: #fff;
+                }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                 content_tab               */
+/* ---                              --- */
+/* ------------------------------------ */
+.content_tab {
+    list-style: none;
+    border-bottom: 1px solid #17203a;
+    float: left;
+    width: 100%;
+    padding-top: 34px;
+}
+    .content_tab li {
+        float: left;
+        margin-left: 39px;
+        padding-bottom: 13px;
+        padding-right: 4px;
+        padding-left: 3px;
+    }
+        .content_tab li a {
+            color: #b5bdc2;
+            font-size: 14px;
+        }
+        .content_tab li a:hover {
+            color: #2297f4;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+    .content_tab li:nth-child(1) {
+        margin-left: 0;
+    }
+    .content_tab li.active {
+        border-bottom: 2px solid #2297f4;
+    }
+        .content_tab li.active a {
+            color: #2297f4;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                 outcome               */
+/* ---                              --- */
+/* ------------------------------------ */
+.outcome .item {
+    background: #0a0e1a;
+    width: 287px;
+    float: left;
+    padding: 13px 9px 13px 17px;
+    margin-top: 18px;
+    margin-left: 7px;
+    overflow-y: hidden;
+}
+    .outcome .item:nth-child(1) {
+        margin-left: 0;
+    }
+    .outcome .item:nth-child(3n+4) {
+        margin-left: 0;
+    }
+    .outcome .item img {
+        float: left;
+    }
+    .outcome .item .live {
+        float: left;
+        display: inline-block;
+        color: #ec0530;
+        position: relative;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+        .outcome .item .live:before {
+            content: '';
+            position: absolute;
+            left: 38px;
+            width: 15px;
+            height: 15px;
+            background: url(img/live_after.png) no-repeat center center;
+        }
+        .outcome .item .live .result {
+            padding-left: 28px;
+        }
+    .outcome .item .plus {
+        float: right;
+        color: #2297f4;
+        font-size: 14px;
+    }
+    .outcome .item .team {
+        color: #d9dfff;
+        font-size: 14px;
+        clear: both;
+        padding-top: 15px;
+        text-align: center;
+        display: block;
+    }
+        .outcome .item .team:hover {
+            color: #2297f4;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+    .outcome .item .view {
+        color: #2f3f6d;
+        font-size: 12px;
+        text-align: center;
+        padding-top: 3px;
+        text-overflow: clip;
+    }
+    .outcome .item ul {
+        list-style: none;
+        text-align: center;
+        width: 205px;
+        padding-top: 18px;
+        margin: 0 auto;
+    }
+        .outcome .item ul li {
+            display: inline-block;
+        }
+            .outcome .item ul li a {
+                color: #fff;
+                font-size: 14px;
+            }
+                .outcome .item ul li a:hover {
+                    color: #2297f4;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                }
+            .outcome .item ul li:nth-child(1) {
+                float: left;
+            }
+            .outcome .item ul li:last-child {
+                float: right;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                rate_tabl               */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.rate_tabl {
+    float: left;
+    width: 100%;
+    margin-top: 18px;
+}
+    .rate_tabl .name {
+        background: #0a0e1a;
+        line-height: 40px;
+        text-transform: uppercase;
+        color: #2f3f6d;
+        font-size: 12px;
+        float: left;
+        margin-bottom: 10px;
+    }
+        .rate_tabl .date {
+            width: 321px;
+            float: left;
+            padding-left: 73px;
+        }
+        .rate_tabl .teams {
+            width: 293px;
+            float: left;
+            padding-left: 10px;
+        }
+        .rate_tabl .team_1 {
+            width: 97px;
+            float: left;
+            padding-left: 10px;
+        }
+        .rate_tabl .draw {
+            width: 83px;
+            float: left;
+            padding-left: 5px;
+        }
+        .rate_tabl .team_2 {
+            width: 82px;
+            float: left;
+            padding-left: 5px;
+        }
+    .rate_tabl .item {
+        float: left;
+        background: #0a0e1a;
+        margin-bottom: 5px;
+        height: 60px;
+    }
+        .rate_tabl .item:last-child {
+            margin-bottom: 0;
+        }
+        .rate_tabl .item:hover {
+            background: #0e1324;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+        }
+        .rate_tabl .item .logo {
+            float: left;
+            width: 69px;
+            line-height: 60px;
+            padding-left: 21px;
+        }
+            .rate_tabl .item .logo {
+                vertical-align: middle;
+            }
+        .rate_tabl .item .live_results, .rate_tabl .item .today_parrents, .balance_parrents .available .today_parrents, .main_payout .item .today_parrents {
+            float: left;
+            width: 80px;
+            padding-top: 11px;
+        }
+            .rate_tabl .item .live_results .live {
+                display: inline-block;
+                font-size: 12px;
+                color: #ec0530;
+                position: relative;
+            }
+                .rate_tabl .item .live_results .live:after {
+                    content: '';
+                    position: absolute;
+                    left: 28px;
+                    width: 15px;
+                    height: 15px;
+                    background: url(img/live_after.png) no-repeat center center;
+                }
+            .rate_tabl .item .today_parrents .today, .rate_tabl .item .today_parrents .time, .balance_parrents .available .today_parrents, .main_payout .item .today_parrents {
+                color: #2f3f6d;
+                font-size: 12px;
+                line-height: 18px;
+            }
+            .rate_tabl .item .live_results .results {
+                font-size: 14px;
+                color: #ec0530;
+            }
+        .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+            float: left;
+            width: 368px;
+            line-height: 18px;
+            padding-top: 12px;
+        }
+            .rate_tabl .item .team_parrents .team {
+                font-size: 14px;
+                color: #d9dfff;
+            }
+                .rate_tabl .item .team_parrents .team:hover {
+                    color: #2297f4;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                }
+            .rate_tabl .item .team_parrents .view {
+                font-size: 12px;
+                color: #2f3f6d;
+            }
+        .rate_tabl .item .plus_parrents {
+            width: 65px;
+            float: left;
+            text-align: right;
+        }
+            .rate_tabl .item .plus_parrents .plus {
+                font-size: 14px;
+                color: #2297f4;
+                line-height: 60px;
+                padding-right: 7px;
+            }
+                .rate_tabl .item .plus_parrents .plus:hover {
+                    color: #d9dfff;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                }
+        .rate_tabl .item .team_1 {
+            width: 97px;
+            float: left;
+            line-height: 60px;   
+        }
+            .rate_tabl .item .team_1 a {
+                padding-left: 50px;   
+            }
+            .rate_tabl .item .number {
+                color: #fff;
+                font-size: 14px;
+                line-height: 60px;
+            }
+                .rate_tabl .item .number:hover {
+                    color: #2297f4;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                }
+        .rate_tabl .item .team_1_parrents {
+            width: 97px;
+            float: left;
+        }
+            .rate_tabl .item .team_1_parrents a {
+                padding-left: 50px; 
+            }
+        .rate_tabl .item .draw_parrents {
+            width: 100px;
+            float: left;
+        }
+            .rate_tabl .item .draw_parrents a {
+                padding-left: 42px;
+            }
+        .rate_tabl .item .team_2_parrents {
+            width: 97px;
+            float: left;
+        }
+            .rate_tabl .item .team_2_parrents a {
+                padding-left: 30px;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                game_page               */
+/* ---                              --- */
+/* ------------------------------------ */
+.team_results_parrents {
+    width: 100%;
+    height: 263px;
+    position: relative;
+}
+    .team_results_parrents .logo {
+        width: 100%;
+        height: 100%;
+    }
+.navigation_menu {
+    list-style: none;
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    z-index: 99;
+}
+    .navigation_menu li {
+        float: left;
+        position: relative;
+        margin-left: 16px;
+    }
+    .navigation_menu li:nth-child(1) {
+        margin-left: 0;
+    }
+        .navigation_menu li:before {
+            content: '>';
+            position: absolute;
+            right: -12px;
+            top: 1px;
+            color: #5c606e;
+            font-size: 12px;
+        }
+        .navigation_menu li:last-child:before {
+            content: '';
+        }
+        .navigation_menu li a {
+            float: left;
+            color: #5c606e;
+            font-size: 12px;
+        }
+            .navigation_menu li a:hover {
+                color: #2297f4;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                menu_team               */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.menu_team {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -215px;
+    width: 430px;
+    height: 100%;
+    background: rgba(10, 14, 26, 0.95);
+    padding: 18px 20px;
+}
+.team_vs_parrents {
+    text-align: center;
+    padding-top: 70px;
+}
+    .team_vs_parrents .team_vs, .team_vs_parrents .results_vs {
+        display: inline-block;
+        color: #fff;
+        font-size: 20px;
+        font-family: 'helM';
+        width: 153px;
+        text-align: right;
+        position: relative;
+    }
+    .team_vs_parrents .team_vs.second {
+        text-align: left;
+    }
+    .team_vs_parrents .results_vs {
+        color: #ec0530;
+        width: auto;
+        margin: 0 16px;
+    }
+    .menu_team .watch {
+        display: inline-block;
+        margin-left: 161px;
+        text-align: center;
+        margin-top: 15px;
+        position: relative;
+        font-size: 12px;
+        color: #ec0530;
+    }
+        .menu_team .watch:hover span {
+            color: #2297f4;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+        .menu_team .watch span {
+            display: block;
+            font-size: 12px;
+            color: #ec0530;
+            margin-top: 5px;
+        }
+        .menu_team .watch:before {
+            content: '';
+            position: absolute;
+            top: 10px;
+            right: 58px;
+            width: 145px;
+            height: 1px;
+            background: #17203a;
+        }
+        .menu_team .watch:after {
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 58px;
+            width: 145px;
+            height: 1px;
+            background: #17203a;
+        }
+        .menu_team .view_info {
+            font-size: 12px;
+            color: #fff;
+            text-align: center;
+            padding-top: 64px;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                main half              */
+/* ---                              --- */
+/* ------------------------------------ */
+.main_half {
+    float: left;
+    margin-top: 30px;
+    width: 668px;
+}
+    .main_half .item_half {
+        float: left;
+        padding-top: 25px;
+        margin-left: 20px;
+    }
+        .main_half .item_half:nth-child(1), .main_half .item_half:nth-child(2n+3)  {
+            margin-left: 0;
+        }
+        .main_half .item_half .name_half {
+            color: #2297f4;
+            font-size: 14px;
+            border-bottom: 1px solid #17203a;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .main_half .item_half a {
+            background: #0a0e1a;
+            float: left;
+            text-align: center;
+            display: block;
+            height: 60px;
+            width: 108px;
+            line-height: 60px;
+            font-size: 14px;
+            color: #fff;
+        }
+            .main_half .item_half a:hover {
+                background: #0e1324;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                live_parrents               */
+/* ---                              --- */
+/* ------------------------------------ */
+.live_parrents {
+    float: left;
+    background: #0a0e1a;
+    width: 315px;
+    margin-left: 40px;
+    margin-top: 35px;
+    padding: 18px 21px;
+}
+    .live_parrents .name_live {
+        color: #2297f4;
+        font-size: 14px;
+        border-bottom: 2px solid #2297f4;
+        position: relative;
+        padding-bottom: 12px;
+        display: inline-block;
+        padding-right: 7px;
+        margin-top: 30px;
+    }
+        .live_parrents .name_live:nth-child(1) {
+            margin-top: 0;
+        }
+        .live_parrents .name_live:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 273px;
+            height: 1px;
+            background: #17203a;
+        }
+    .live_parrents .video {
+        margin-top: 20px;
+        height: 143px;
+        width: 100%;
+    }
+        .live_parrents .video a {
+            height: 100%;
+            display: block;
+            position: relative;
+        }
+            .live_parrents .video a:before {
+                content: '';
+                position: absolute;
+                left: 50%;top: 50%;
+                margin-left: -18px;
+                margin-top: -18px;
+                width: 36px;
+                height: 36px;
+                background: url(img/play_video.png) no-repeat center center;
+            }
+            .live_parrents .video a img {
+                width: 100%;
+                height: 100%;
+            }
+    .live_parrents .news_parrents {
+        padding-top: 21px;
+        padding-bottom: 89px;
+    }
+        .live_parrents .news_time {
+            text-align: right;
+            margin-bottom: 7px;
+        }
+            .live_parrents .news_time .time {
+                position: absolute;
+                left: -54px;
+                top: 50%;
+                margin-top: -8px;
+                color: #4f5d87;
+                font-size: 14px;
+                padding-right: 2px;
+            }
+                .live_parrents .news_time .time:after {
+                    content: '-';
+                    position: absolute;
+                    right: -10px;
+                    color: #4f5d87;
+                    font-size: 14px;
+                }
+            .live_parrents .news_time .news_now {
+                background: #0e1324;
+                padding: 10px 5px 10px 13px;
+                width: 218px;
+                display: inline-block;
+                text-align: left;
+                position: relative;
+            }
+                .live_parrents .news_time .news_now .news_link {
+                    color: #d9dfff;
+                    font-size: 14px;
+                    line-height 18px;
+                }
+                    .live_parrents .news_time .news_now .news_link:hover {
+                        color: #2297f4;
+                        -webkit-transition: 0.3s ease-out;
+                        -o-transition: 0.3s ease-out;
+                        -moz-transition: 0.3s ease-out;
+                        transition: 0.3s ease-out;
+                    }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                about_parrents               */
+/* ---                              --- */
+/* ------------------------------------ */
+.about_parrents {
+    background: #0a0e1a;
+    margin-top: 29px;
+    padding: 30px 40px 110px 35px;
+}
+    .about_parrents .text {
+        color: #e1dede;
+        line-height: 18px;
+        margin-bottom: 20px;
+        text-align: justify;
+        font-size: 14px;
+    }
+        .about_parrents .text .med_text {
+            font-family: 'helM';
+        }
+    .about_parrents .list_parrents {
+        margin-top: 32px;
+    }
+        .about_parrents .text.list {
+            position: relative;
+            padding-left: 22px;
+        }
+            .about_parrents .text.list:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 5px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: #2297f4;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                sign_parrents               */
+/* ---                              --- */
+/* ------------------------------------ */
+.sign_parrents {
+    margin-top: 45px;
+}
+    .sign_parrents .navigation_menu {
+        left: 0;
+    }
+    .sign_parrents .log_sig {
+        text-align: center;
+        border-bottom: 1px solid #17203a;
+    }
+        .sign_parrents .log_sig .link {
+            display: inline-block;
+            margin: 0 20px;
+            color: #b5bdc2;
+            padding-bottom: 14px;
+        }
+            .sign_parrents .log_sig .link:hover {
+                color: #2297f4;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+        .sign_parrents .log_sig .link.active {
+            color: #2297f4;
+            border-bottom: 2px solid #2297f4;
+        }
+    .sign_parrents .form_login {
+        background: #0a0e1a;
+        float: left;
+        width: 100%;
+        margin-top: 22px;
+        padding-top: 49px;
+        padding-bottom: 43px;
+    }
+    .sign_parrents .form_login.forgot.login {
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+    .sign_parrents .form_login.forgot {
+        padding-bottom: 62px;
+    }
+    .sign_parrents .form_login .we_will {
+        color: #d7dcef;
+        font-size: 14px;
+        text-align: center;
+        padding-top: 14px;
+    }
+        .sign_parrents .form_login form {
+            margin: 0 auto;
+            width: 556px;
+        }
+        .sign_parrents .form_login form.forgot_form {
+            margin: 0 auto;
+            width: 257px;
+            margin-top: 25px;
+            padding-bottom: 27px;
+        }
+            .sign_parrents .form_login form.forgot_form label:last-child {
+                margin-bottom: 27px;
+            }
+            .sign_parrents .form_login form.forgot_form.login label:last-child {
+                margin-bottom: 6px;
+            }
+                .sign_parrents .form_login form label, .money_window label {
+                    width: 257px;
+                    float: left;
+                    margin-bottom: 24px;
+                }
+                    .sign_parrents .form_login form label:last-child {
+                        margin-bottom: 39px;
+                    }
+                .content.sign_in .form_login form label:nth-child(even) {
+                    margin-left: 0;
+                }
+                .sign_parrents .form_login.sign_in form label:nth-child(even) {
+                    margin-left: 41px;
+                }
+                .sign_parrents .form_login.sign_in {
+                    padding: 49px 10px 43px 10px;
+                }
+            .sign_parrents .form_login form label .name, .money_window label .name, .bets_form form label .name, .bets_form .item label .name {
+                color: #454f73;
+                font-size: 12px;
+            }
+            .sign_parrents .form_login form label input, .money_window label input, .bets_form form label .add_inp {
+                width: 257px;
+                border: 0;
+                border-bottom: 1px solid #17203a;
+                background: none;
+                outline: none;
+                padding-bottom: 9px;
+                padding-top: 11px;
+                color: #d9dfff;
+                font-size: 14px;
+            }
+    .sign_parrents .form_login .forgot_password {
+        text-align: center;
+        font-size: 12px;
+        color: #444955;
+        clear: both;
+        margin-bottom: 20px;
+    }
+        .sign_parrents .form_login .forgot_password a {
+            color: #444955;
+            border-bottom: 1px solid #444955;
+        }
+    .sign_parrents .form_login .btn {
+        clear: both;
+        margin: 0 auto;
+        width: 99px;
+        background: #2297f4;
+        line-height: 31px;
+        color: #dfe4f8;
+        text-align: center;
+    }
+    .sign_parrents .form_login .btn.login {
+        background: none;
+        border: 1px solid #525f84;
+    }
+        .sign_parrents .form_login .btn.login:hover {
+            background: #2297f4;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                profile_parrents               */
+/* ---                              --- */
+/* ------------------------------------ */
+.profile_parrents .navigation_menu {
+    left: 0;
+    top: 10px;
+}
+.profile_parrents .content_tab {
+    margin-top: 35px;
+    padding-top: 0;
+}
+.content_tab li.exit {
+    float: right;
+    color: #9a9898;
+    position: relative;
+}
+    .content_tab li.exit:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: -18px;
+        width: 12px;
+        height: 13px;
+        background: url(img/exit_door.png) no-repeat center center;
+    }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                balance_parrents              */
+/* ---                              --- */
+/* ------------------------------------ */
+.balance_parrents {
+    margin-top: 21px;
+}
+    .balance_parrents .available {
+        float: left;
+        width: 615px;
+        background: #0a0e1a;
+        padding: 28px 30px;
+        margin-top: 21px;
+        position: relative;
+    }
+        .balance_parrents .available .top_name {
+            border-bottom: 1px solid #17203a;
+            float: left;
+            width: 100%;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+            .balance_parrents .available .name {
+                color: #485a8d;
+                font-size: 14px;
+                float: left;
+            }
+                .balance_parrents .available .name span {
+                    color: #d9dfff;
+                    font-family: 'helM';
+                }
+            .balance_parrents .available .money {
+                float: right;
+                color: #d9dfff;
+                font-size: 14px;
+                position: relative;
+            }
+                .balance_parrents .available .money:before {
+                    content: '$';
+                    position: absolute;
+                    left: -13px;
+                    font-size: 14px;
+                    color: #d9dfff;
+                }
+        .balance_parrents .available .item {
+            float: left;
+            width: 100%;
+            margin-bottom: 18px;
+        }
+            .balance_parrents .available .item .today_parrents, .balance_parrents .available .item .team_parrents {
+                padding-top: 0;
+            }
+            .balance_parrents .available .item .team_parrents {
+                width: 390px;
+            }
+                .balance_parrents .available .item .team_parrents .view {
+                    font-size: 14px;
+                    color: #d9dfff;
+                }
+                    .balance_parrents .available .item .team_parrents .view a {
+                        border-bottom: 1px solid #5a5e6f;
+                        font-size: 14px;
+                        color: #d9dfff;
+                    }
+                        .balance_parrents .available .item .team_parrents .view a:hover {
+                            color: #2297f4;
+                            border-bottom: 1px solid #2297f4;
+                            -webkit-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                            transition: 0.3s ease-out;
+                        }
+            .balance_parrents .available .item .cash {
+                font-size: 14px;
+                color: #349902;
+                float: right;
+                position: relative;
+            }
+            .balance_parrents .available .item .cash.diff {
+                color: #ec0530;
+            }
+                .balance_parrents .available .item .cash:before {
+                    content: '$';
+                    position: absolute;
+                    left: -13px;
+                }
+                .balance_parrents .available .item .cash:after {
+                    content: '+';
+                    position: absolute;
+                    left: -26px;
+                }
+                .balance_parrents .available .item .cash.diff:after {
+                    content: '-';
+                }
+        .balance_parrents .available .btn {
+            font-size: 14px;
+            color: #d9dfff;
+            position: relative;
+            clear: both;
+            display: inline-block;
+        }
+            .balance_parrents .available .btn:after {
+                content: '';
+                position: absolute;
+                right: -22px;
+                top: 5px;
+                width: 11px;
+                height: 6px;
+                background: url(img/available_btn.png) no-repeat center center;
+            }
+    .balance_parrents .main {
+        float: left;
+        width: 241px;
+        margin-left: 20px;
+        margin-top: 21px;
+    }
+        .balance_parrents .main .item {
+            width: 100%;
+            background: #0a0e1a;
+            margin-bottom: 15px;
+            padding: 27px 19px 24px 17px;
+        }
+            .balance_parrents .main .item .name {
+                color: #dfe4f8;
+                font-size: 14px;
+                float: left;
+                display: inline-block;
+            }
+            .balance_parrents .main .item .name_all {
+                float: right;
+                position: relative;
+            }
+                .balance_parrents .main .item .name_all:before {
+                    content: '$';
+                    position: absolute;
+                    left: -14px;
+                    color: #dfe4f8;
+                    font-size: 16px;
+                }
+            .balance_parrents .main .money_window {
+                width: 615px;
+                position: absolute;
+                left: -1000%;
+                background: rgba(13, 18, 33, 0.99);
+                box-shadow: 9px 12px 21px 0px rgba(0, 0, 0, 0.4);
+                padding: 30px 30px 35px 20px;
+                z-index: 99;
+            } 
+            .balance_parrents .main .money_window.active {
+                left: 118px;
+                top: 100px;
+            } 
+                .balance_parrents .main .money_window .cansel {
+                    position: absolute;
+                    right: 16px;
+                    top: 14px;
+                    cursor: pointer;
+                } 
+                .balance_parrents .main .money_window .name_money {
+                    color: #dfe4f8;
+                    font-size: 14px;
+                    margin-bottom: 28px;
+                }
+                .balance_parrents .main .money_window label {
+                    width: 268px;
+                    display: block;
+                    float: none;
+                    position: relative;
+                }      
+                    .balance_parrents .main .money_window label input {
+                        width: 268px;
+                    } 
+                    .balance_parrents .main .money_window label .abs_edit, .settings .general_info label .abs_edit, .bets_form .item .abs_edit {
+                        position: absolute;
+                        right: 5px;
+                        bottom: 12px;
+                        width: 11px;
+                        height: 13px;
+                        background: url(img/abs_edit.png) no-repeat center center;
+                        cursor: pointer;
+                    }  
+                .balance_parrents .main .money_window label.card {
+                    width: 100%;
+                    float: left;
+                }
+                    .balance_parrents .main .money_window label.card ul {
+                        list-style: none;
+                        margin-top: 10px;
+                    }
+                        .balance_parrents .main .money_window label.card ul li {
+                            float: left;
+                            margin-left: 16px;
+                            padding-bottom: 9px;
+                            border-bottom: 2px solid transparent;
+                        } 
+                        .balance_parrents .main .money_window label.card ul li:hover {
+                            border-bottom: 2px solid #2297f4;
+                            -webkit-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                            transition: 0.3s ease-out;
+                        } 
+                        .balance_parrents .main .money_window label.card ul li.active {
+                            border-bottom: 2px solid #2297f4;
+                        } 
+                        .balance_parrents .main .money_window label.card ul li:nth-child(1) {
+                            margin-left: 0;
+                        } 
+                            .balance_parrents .main .money_window label.card ul li a {
+                                display: inline-block;
+                                width: 56px;
+                                height: 42px;
+                            }  
+                                .balance_parrents .main .money_window label.card ul li a img {
+                                    width: 100%;
+                                    height: 100%;
+                                    border-radius: 3px;
+                                }   
+                .balance_parrents .main .money_window form {
+                    float: left;
+                }
+                    .balance_parrents .main .money_window form .name_money {
+                        font-size: 14px;
+                        color: #dfe4f8;
+                    }    
+                    .balance_parrents .main .money_window form label {
+                        float: left;
+                    } 
+                        .balance_parrents .main .money_window form label:nth-child(odd) {
+                            margin-left: 45px;
+                            width: 252px;
+                        } 
+                        .balance_parrents .main .money_window form label:nth-child(odd) input {
+                            width: 252px;
+                        }  
+                .balance_parrents .main .money_window .rules {
+                    float: left;
+                    margin-top: -6px;
+                    width: 100%;
+                }
+                    .balance_parrents .main .money_window .rules .agree {
+                        color: #454f73;
+                        font-size: 12px;
+                        display: inline-block;
+                    }
+                    .balance_parrents .main .money_window .rules .rad_rules, .settings .main .select_info .view, .bets_form .item .view {
+                        border: 0;
+                        border-radius: 50%;
+                        background: #1a233e;
+                        width: 21px;
+                        height: 21px;
+                        outline: none;
+                        position: relative;
+                        float: left;
+                        margin-right: 13px;
+                    }
+                        .balance_parrents .main .money_window .rules .rad_rules:checked:before, .settings .main .select_info .view:checked:before, .bets_form .item .view:checked:before {
+                            opacity: 1;
+                        }
+                        .balance_parrents .main .money_window .rules .rad_rules:before, .settings .main .select_info .view:before, .bets_form .item .view:before {
+                            content: '';
+                            position: absolute;
+                            opacity: 0;
+                            left: 0;
+                            width: 21px;
+                            height: 21px;
+                            border-radius: 50%;
+                            background: url(img/rad_rules_before.png) no-repeat center center;
+                        }
+                .balance_parrents .main .money_window .btn_parrents {
+                    clear: both;
+                    padding-top: 25px;
+                }
+                    .balance_parrents .main .money_window .btn_parrents .btn {
+                        width: 103px;
+                        line-height: 30px;
+                        color: #dfe4f8;
+                        font-size: 13px;
+                        text-align: center;
+                        background: none;
+                        border: 1px solid #525f84;
+                        float: right;
+                    }
+                        .balance_parrents .main .money_window .btn_parrents .btn:hover {
+                            color: #dfe4f8;
+                            border: 1px solid #2297f4;
+                            background: #2297f4;
+                            -webkit-transition: 0.3s ease-out;
+                            -o-transition: 0.3s ease-out;
+                            -moz-transition: 0.3s ease-out;
+                            transition: 0.3s ease-out;
+                        }
+            .balance_parrents .main .item .btn_parrents {
+                clear: both;
+                padding-top: 19px;
+            }
+                .balance_parrents .main .item .btn {
+                    width: 103px;
+                    line-height: 30px;
+                    color: #dfe4f8;
+                    font-size: 13px;
+                    text-align: center;
+                    background: none;
+                    border: 1px solid #525f84;
+                    display: inline-block;
+                }
+                .balance_parrents .main .item .btn.deposit {
+                    width: 85px;
+                    margin-right: 10px;
+                }
+                .balance_parrents .main .item .btn.active {
+                    background: #2297f4;
+                    border: 1px solid #2297f4;
+                }
+                    .balance_parrents .main .item .btn:hover {
+                        color: #dfe4f8;
+                        border: 1px solid #2297f4;
+                        background: #2297f4;
+                        -webkit-transition: 0.3s ease-out;
+                        -o-transition: 0.3s ease-out;
+                        -moz-transition: 0.3s ease-out;
+                        transition: 0.3s ease-out;
+                    }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                faq              */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.content.faq {
+    padding-bottom: 246px;
+}
+    .content.faq .faq_parrents .tab_quetions {
+        float: left;
+        width: 621px;
+        margin-top: 29px;
+    }
+        .content.faq .faq_parrents .tab_quetions .item {
+            position: relative;
+            width: 100%;
+            background: #0a0e1a;
+            overflow: hidden;
+            margin-bottom: 5px;
+            -webkit-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+            .content.faq .faq_parrents .tab_quetions .item:after {
+                content: '';
+                position: absolute;
+                right: 18px;
+                top: 18px;
+                width: 11px;
+                height: 6px;
+                background: url(img/item_quetions_after.png) no-repeat center center;
+            }
+            .content.faq .faq_parrents .tab_quetions .item.active:after {
+                content: '';
+                background: none;
+            }
+            .content.faq .faq_parrents .tab_quetions .item.active:before {
+                content: '';
+                position: absolute;
+                right: 18px;
+                top: 16px;
+                width: 11px;
+                height: 6px;
+                background: url(img/item_quetions_before.png) no-repeat center center;
+            }
+            .content.faq .faq_parrents .tab_quetions .item:hover {
+                background: #0e1324;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+                cursor: pointer;
+            }
+                .content.faq .faq_parrents .tab_quetions .item:hover a {
+                    color: #2297f4;
+                }
+        .content.faq .faq_parrents .tab_quetions .item.active {
+            background: #0e1324;
+        }
+            .content.faq .faq_parrents .tab_quetions .item a {
+                display: block;
+                font-size: 14px;
+                color: #e1dede;
+                line-height: 42px;
+                padding-left: 20px;
+            }
+                .content.faq .faq_parrents .tab_quetions .item.active a {
+                    color: #2297f4;
+                }
+            .content.faq .faq_parrents .tab_quetions .item .label {
+                height: 0;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            } 
+            .content.faq .faq_parrents .tab_quetions .item.active .label {
+                height: auto;
+                padding: 10px 20px 25px 20px;
+                font-size: 14px;
+            }
+                .content.faq .faq_parrents .tab_quetions .item.active .label p {
+                    color: #e1dede;
+                    line-height: 18px;
+                    font-size: 14px;
+                }  
+    .content.faq .faq_parrents .ask_us {
+        float: left;
+        width: 241px;
+        margin-left: 14px;
+        background: #0a0e1a;
+        padding: 27px 20px 24px 17px;
+        margin-top: 29px;
+    }
+        .content.faq .faq_parrents .ask_us .name {
+            font-size: 14px;
+            color: #dfe4f8;
+            text-align: center;
+            margin-bottom: 21px;
+        }
+        .content.faq .faq_parrents .ask_us label {
+            margin-bottom: 23px;
+            float: left;
+            width: 100%;
+        }
+            .content.faq .faq_parrents .ask_us label .name_inp {
+                font-size: 12px;
+                color: #454f73;
+            }
+            .content.faq .faq_parrents .ask_us label input {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid #17203a;
+                background: none;
+                outline: none;
+                padding-bottom: 9px;
+                padding-top: 11px;
+                color: #d9dfff;
+                font-size: 14px;
+            }
+            .content.faq .faq_parrents .ask_us label textarea {
+                max-width: 100%;
+                min-width: 100%;
+                min-height: 97px;
+                border: 1px solid #17203a;
+                background: none;
+                outline: none;
+                margin-top: 12px;
+                padding: 14px 16px;
+                color: #d9dfff;
+                font-size: 14px;
+            }
+            .content.faq .faq_parrents .ask_us .btn {
+                width: 103px;
+                background: #2297f4;
+                text-align: center;
+                margin: 0 auto;
+                line-height: 32px;
+                color: #dfe4f8;
+                font-size: 13px;
+                clear: both;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                payout_parrents               */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.payout_parrents {
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+    .payout_parrents .date_pay, .user_pay, .detail_pay, .win_pay, .all_pay {
+        float: left;
+        background: #0a0e1a;
+        font-size: 12px;
+        color: #2f3f6d;
+        text-transform: uppercase;
+        line-height: 40px;
+    }
+        .payout_parrents .date_pay {
+            width: 204px;
+            padding-left: 34px;
+        }
+        .payout_parrents .user_pay {
+            width: 235px;
+        }
+        .payout_parrents .detail_pay {
+            width: 152px;
+        }
+        .payout_parrents .win_pay {
+            width: 191px;
+        }
+        .payout_parrents .all_pay {
+            width: 94px;
+            position: relative;
+        }
+            .payout_parrents .all_pay:after {
+                content: '';
+                position: absolute;
+                left: 32px;
+                top: 17px;
+                width: 11px;
+                height: 6px;
+                background: url(img/available_btn.png) no-repeat center center;
+            }
+.main_payout {
+    clear: both;
+    position: relative;
+}
+    .main_payout .item {
+        background: #0a0e1a;
+        height: 60px;
+        margin-bottom: 6px;
+    }
+        .main_payout .item:hover {
+            background: #0e1324;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+            cursor: pointer;
+        }
+        .main_payout .item .today_parrents {
+            width: 122px;
+            padding-left: 30px;
+            height: 100%;
+        }
+        .main_payout .item .user_parrents {
+            width: 285px;
+            float: left;
+            height: 100%;
+        }
+            .main_payout .item .user_parrents img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                float: left;
+                margin-top: 15px;
+                margin-right: 13px;
+            }
+            .main_payout .item .user_parrents .name {
+                font-size: 14px;
+                color: #fff;
+                float: left;
+                padding-top: 20px;
+            }
+        .main_payout .item .more_parrents {
+            width: 230px;
+            float: left;
+            height: 100%;
+        }
+            .main_payout .item .more_parrents .more {
+                font-size: 12px;
+                color: #fff;
+                padding-top: 23px;
+                position: relative;
+                display: inline-block;
+            }
+                .main_payout .item .more_parrents .more:after {
+                    content: '';
+                    position: absolute;
+                    left: 111px;
+                    top: 26px;
+                    width: 11px;
+                    height: 6px;
+                    background: url(img/available_btn.png) no-repeat center center;
+                }
+                .main_payout .item .more_parrents .more_window {
+                    background: #101626;
+                    padding: 10px 20px;
+                    position: absolute;
+                    right: 0;
+                    z-index: 99;
+                    float: left;
+                    display: none;
+                    box-shadow: 9px 12px 21px 0px rgba(0, 0, 0, 0.4);
+                }
+                .main_payout .item .more_parrents .more_window .cansel {
+                    position: absolute;
+                    right: 16px;
+                    top: 14px;
+                    cursor: pointer;
+                }
+                .main_payout .item .more_parrents .more_window.active {
+                    right: 85px;
+                    display: block;
+                }
+                    .main_payout .item .more_parrents .more_window .left_info, .main_payout .item .more_parrents .more_window .info {
+                        float: left;
+                        list-style: none;
+                        padding-top: 8px;
+                    }
+                        .main_payout .item .more_parrents .more_window .left_info li {
+                            display: block;
+                            margin-bottom: 18px;
+                            color: #2e3f6c;
+                            font-size: 14px;
+                            padding-right: 20px;
+                        }
+                            .main_payout .item .more_parrents .more_window .left_info li:last-child {
+                                padding-bottom: 0;
+                            }
+                    .main_payout .item .more_parrents .more_window .info {
+                        border-left: 1px solid #161e31;
+                        padding-left: 25px;
+                    }
+                    .main_payout .item .more_parrents .more_window .info .data {
+                        margin-bottom: 9px;
+                    }
+                        .main_payout .item .more_parrents .more_window .info li {
+                            font-size: 14px;
+                            color: #fff;
+                            display: block;
+                            margin-bottom: 17px;
+                        }
+                            .main_payout .item .more_parrents .more_window .info .team {
+                                margin-bottom: 9px;
+                            }
+                                .main_payout .item .more_parrents .more_window .info .team p {
+                                    line-height: 18px;
+                                }
+                                .main_payout .item .more_parrents .more_window .info .team .view {
+                                    color: #2e3f6c;
+                                    font-size: 12px;
+                                }
+                            .main_payout .item .more_parrents .more_window .info .money {
+                                position: relative;
+                                padding-left: 8px;
+                            }
+                                .main_payout .item .more_parrents .more_window .info .money:before {
+                                    content: '$';
+                                    position: absolute;
+                                    left: 0;
+                                }
+                            .main_payout .item .more_parrents .more_window .info .plus {
+                                position: relative;
+                                color: #308d06;
+                                padding-left: 18px;
+                            }
+                                .main_payout .item .more_parrents .more_window .info .plus:before {
+                                    content: '+';
+                                    position: absolute;
+                                    left: 0;
+                                }
+                                .main_payout .item .more_parrents .more_window .info .plus:after {
+                                    content: '$';
+                                    position: absolute;
+                                    left: 9px;
+                                }
+        .main_payout .item .detail_parrents {
+            float: left;
+            width: 120px;
+            height: 100%;
+        }
+            .main_payout .item .detail_parrents .money {
+                font-size: 14px;
+                color: #fff;
+                display: inline-block;
+                position: relative;
+                margin-top: 20px;
+            }
+                .main_payout .item .detail_parrents .money:before {
+                    content: '$';
+                    position: absolute;
+                    left: -8px;
+                }
+        .main_payout .item .pay_parrents {
+            float: left;
+            width: 99px;
+            height: 100%;
+            padding-top: 14px;
+            text-align: center;
+        }
+            .main_payout .item .pay_parrents .btn, .more_parrents .more_click .btn {
+                text-align: center;
+                width: 99px;
+                border: 1px solid #525f84;
+                line-height: 31px;
+                color: #dfe4f8;
+                font-size: 14px;
+            }
+            /* ------------------------------------ */
+            /* ------------------------------------ */
+            .main_payout .item .pay_parrents .more_click {
+                width: 240px;
+                background: #0a0e1a;
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: none;
+                padding: 28px 20px 33px 17px;
+                text-align: left;
+                box-shadow: 9px 12px 21px 0px rgba(0, 0, 0, 0.4);
+            }
+                .main_payout .item .pay_parrents .more_click.active {
+                    display: block;
+                    top: 5px;
+                    right: 280px;
+                }
+                .main_payout .item .pay_parrents .cansel {
+                    position: absolute;
+                    right: 16px;
+                    top: 14px;
+                    cursor: pointer;
+                }
+                .main_payout .item .pay_parrents .more_click .pay_money {
+                    color: #dfe4f8;
+                    font-size: 14px;
+                }
+                .main_payout .item .pay_parrents .more_click label {
+                    margin-bottom: 13px;
+                    float: left;
+                    width: 100%;
+                }
+                    .main_payout .item .pay_parrents .more_click label .name {
+                        color: #454f73;
+                        font-size: 12px;
+                        margin-top: 17px;
+                    }
+                    .main_payout .item .pay_parrents .more_click label select, .more_click label input {
+                        border: 0;
+                        border-bottom: 1px solid #17203a;
+                        background: url(img/select.png) no-repeat right 4px center;
+                        width: 100%;
+                        padding: 10px 0;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        -o-appearance: none;
+                        outline: none;
+                        color: #d9dfff;
+                        font-size: 14px;
+                    }
+                        .main_payout .item .pay_parrents .more_click label select option {
+                            background: #0a0e1a;
+                        }
+                    .main_payout .item .pay_parrents .more_click label input {
+                        background: none;
+                    }
+                    .main_payout .item .pay_parrents .more_click .btn {
+                        float: right;
+                        margin-top: 13px;
+                    }
+            /* ------------------------------------ */
+            /* ------------------------------------ */
+                .main_payout .item .pay_parrents .btn:hover, .more_parrents .more_click .btn:hover {
+                    background: #2297f4;
+                    border: 1px solid #2297f4;
+                    -webkit-transition: 0.3s ease-out;
+                    -o-transition: 0.3s ease-out;
+                    -moz-transition: 0.3s ease-out;
+                    transition: 0.3s ease-out;
+                }
+            .main_payout .item .pay_parrents .paid {
+                color: #dfe4f8;
+                font-size: 14px;
+            }
+    .main_payout .show_more {
+        color: #d9dfff;
+        font-size: 12px;
+        margin-left: 27px;
+        margin-top: 18px;
+        clear: both;
+        position: relative;
+        display: inline-block;
+    }
+        .main_payout .show_more:after {
+            content: '';
+            right: -22px;
+            top: 4px;
+            position: absolute;
+            width: 11px;
+            height: 6px;
+            background: url(img/available_btn.png) no-repeat center center;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                settings              */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.content.settings {
+    padding-bottom: 407px;
+}
+    .content.settings .content_tab, .content.notifications .content_tab, .content.my_bets .content_tab {
+        padding-top: 47px;
+    }
+    .navigation_parrents .navigation_menu, .content.notifications .navigation_menu {
+        left: 0;
+    }
+    .content .main .general_info {
+        width: 614px;
+        float: left;
+        background: #0a0e1a;
+        padding: 25px 30px 35px 30px;
+        margin-top: 22px;
+    }
+        .content .main .general_info .name_parrents {
+            color: #dfe4f8;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+            .content .main .general_info .add_photo {
+                float: left;
+            }
+                .content .main .general_info .add_photo img {
+                    width: 51px;
+                    height: 51px;
+                    border-radius: 50%;
+                    float: left;
+                    margin-right: 15px;
+                }
+                .content .main .general_info .add_photo .change {
+                    display: inline-block;
+                    float: left;
+                    color: #454f73;
+                    border-bottom: 1px solid #1e2437;
+                    padding-top: 15px;
+                }
+            .content .main .general_info form {
+                width: 100%;
+                float: left;
+                padding-top: 20px;
+            }
+                .content .main .general_info form label {
+                    width: 257px;
+                    float: left;
+                    position: relative;
+                    margin-bottom: 24px;
+                }
+                    .content .main .general_info form label:nth-child(even) {
+                        margin-left: 40px;
+                    }
+                    .content .main .general_info form label .name {
+                        color: #454f73;
+                        font-size: 12px;
+                    }
+                    .content .main .general_info form label input {
+                        width: 257px;
+                        border: 0;
+                        border-bottom: 1px solid #17203a;
+                        background: none;
+                        outline: none;
+                        padding-bottom: 9px;
+                        padding-top: 11px;
+                        color: #d9dfff;
+                        font-size: 14px;
+                    }
+    .content .main .general_info .btn {
+        width: 99px;
+        line-height: 30px;
+        color: #dfe4f8;
+        font-size: 13px;
+        text-align: center;
+        background: none;
+        border: 1px solid #525f84;
+        float: right;
+        clear: both;
+        margin-top: 13px;
+    }
+        .content .main .general_info .btn:hover {
+            color: #dfe4f8;
+            border: 1px solid #2297f4;
+            background: #2297f4;
+            -webkit-transition: 0.3s ease-out;
+            -o-transition: 0.3s ease-out;
+            -moz-transition: 0.3s ease-out;
+            transition: 0.3s ease-out;
+        }
+    .content .main .select_info {
+        width: 240px;
+        float: left;
+        margin-left: 20px;
+        background: #0a0e1a;
+        padding: 30px 20px 72px 17px;
+        margin-top: 22px;
+    }
+        .content .main .select_info .name_parrents {
+            color: #dfe4f8;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        .content .main .select_info form {
+            margin-bottom: 16px;
+            float: left;
+        }
+            .content .main .select_info form label {
+                float: left;
+                width: 100%;
+                margin-bottom: 8px;
+            }
+                .content .main .select_info form label .view_name {
+                    color: #dfe4f8;
+                    font-size: 14px;
+                    float: left;
+                    padding-top: 2px;
+                }
+        .content.settings .select {
+            margin-left: 60px;
+            width: 257px;
+        }
+        .content.settings .select .name {
+            color: #454f73;
+            font-size: 12px;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                error              */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.home.error {
+    background: url(img/error_bg.png) no-repeat center center;
+    background-size: cover;
+    padding-bottom: 130px;
+    padding-top: 140px;
+}
+    .home.error .error_404 {
+        font-size: 300px;
+        color: #fff;
+        font-family: 'helM';
+        text-align: center;
+        margin-bottom: -20px;
+        margin-top: -60px;
+    }
+    .home.error .page_not {
+        font-size: 19px;
+        color: #fff;
+        text-align: center;
+    }
+    .home.error .back_home {
+        font-size: 14px;
+        text-align: center;
+        color: #fff;
+        margin-top: 5px;
+    }
+        .home.error .back_home a {
+            border-bottom: 1px solid #fff;
+            color: #fff;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                notifications             */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.content.notifications {
+    padding-bottom: 400px;
+}
+    .content.notifications .balance_parrents .available {
+        width: 100%;
+        overflow: hidden;
+    }
+        .content.notifications .balance_parrents .available .item_parrents {
+            margin-bottom: 10px;
+        }
+            .content.notifications .balance_parrents .available .item_parrents .data {
+                float: left;
+                width: 100%;
+                color: #d9dfff;
+                font-family: 'helM';
+                font-size: 14px;
+                padding-bottom: 10px;
+                border-bottom: 1px solid #17203a;
+                margin-bottom: 18px;
+            }
+            .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+                width: 600px;
+            }
+        .content.notifications .balance_parrents .available .show {
+            color: #bfc4e1;
+            font-size: 12px;
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+        }
+            .content.notifications .balance_parrents .available .show:after {
+                content: '';
+                position: absolute;
+                right: -22px;
+                top: 4px;
+                width: 11px;
+                height: 6px;
+                background: url(img/available_btn.png) no-repeat center center;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                content.my_bets             */
+/* ---                              --- */
+/* ------------------------------------ */
+.content.my_bets .navigation_menu {
+    left: 0;
+}
+    .content.my_bets .rate_tabl .name .date {
+        width: 330px;
+    }
+    .content.my_bets .rate_tabl .name .teams {
+        width: 233px;
+    }
+    .content.my_bets .rate_tabl .name .coef {
+        width: 115px;
+    }
+    .content.my_bets .rate_tabl .name .bet {
+        width: 120px;
+    }
+    .content.my_bets .rate_tabl .name .profit {
+        width: 78px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 420px;
+    }
+    .content.my_bets .rate_tabl .item .plus_parrents {
+        text-align: left;
+        width: 100px;
+    }
+    .content.my_bets .rate_tabl .item:hover {
+        background: #0a0e1a;
+        cursor: default;
+    }
+    .content.my_bets .rate_tabl .item .plus_parrents .plus:hover, .content.my_bets .rate_tabl .item .bet_parrents .number:hover, .content.my_bets .rate_tabl .item .profit_parrents .number:hover {
+        color: #e0e1e1 !important;
+    }
+        .content.my_bets .rate_tabl .item .plus_parrents .plus {
+            color: #e0e1e1;
+            padding-left: 28px;
+        }
+    .content.my_bets .rate_tabl .item .bet_parrents {
+        width: 102px;
+    }
+        .content.my_bets .rate_tabl .item .bet_parrents p {
+            padding-left: 28px;
+        }
+    .content.my_bets .rate_tabl .item .profit_parrents {
+        width: 105px;
+        background: #0e1324;
+    }
+        .content.my_bets .rate_tabl .item .profit_parrents p {
+            margin-left: 38px;
+        }
+        .content.my_bets .rate_tabl .item .profit_parrents .plus, .content.my_bets .rate_tabl .item .profit_parrents .minus {
+            color: #308d05;
+            font-size: 14px;
+            line-height: 60px;
+            position: relative;
+        }
+            .content.my_bets .rate_tabl .item .profit_parrents .plus:before {
+                content: '+';
+                position: absolute;
+                left: -11px;
+            }
+        .content.my_bets .rate_tabl .item .profit_parrents .minus {
+            color: #ec0530;
+        }
+            .content.my_bets .rate_tabl .item .profit_parrents .minus:before {
+                content: '-';
+                position: absolute;
+                left: -11px;
+            }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                bets_form            */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+.bets_form {
+    float: left;
+    background: #0a0e1a;
+    width: 100%;
+    padding-top: 23px;
+    padding-left: 28px;
+    padding-bottom: 42px;
+    margin-top: 22px;
+}
+    .bets_form .add_name {
+        font-size: 14px;
+        color: #dfe4f8;
+        margin-bottom: 22px;
+    }
+    .bets_form .item {
+        float: left;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+        .bets_form .item label {
+            float: left;
+            width: 258px;
+            margin-right: 24px;
+            padding-bottom: 9px;
+            padding-top: 11px;
+            color: #d9dfff;
+            font-size: 14px;
+            position: relative;
+        }
+            .bets_form .item label.add_img {
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+            .bets_form .item label.add_lab {
+                padding-top: 8px;
+                padding-bottom: 0;
+            }
+            .bets_form .item label.add_lab.second {
+                padding-top: 34px;
+                width: 61px;
+            }
+            .bets_form .item label.rad {
+                width: 45px;
+                margin-right: 0;
+                padding-top: 37px;
+            }
+                .bets_form .item label.rad .view {
+                    margin-right: 9px;
+                }
+                .bets_form .item label.rad a {
+                    padding-top: 4px;
+                    display: block;
+                }
+            .bets_form .item .select.title label.add_lab.other  {
+                width: 61px;
+            }
+            .select {
+                position: relative;
+                float: left;
+            }
+            .select.category {
+                width: 258px;
+                margin-right: 24px;
+            }
+            .select.date label {
+                width: 44px;
+                margin-right: 12px;
+            }
+            .select.mouth label {
+                width: 61px;
+                padding-top: 24px;
+            }
+            .select.time label {
+                width: 58px;
+                margin-right: 12px;
+            }
+            .select.pm label {
+                width: 44px;
+                padding-top: 24px;
+            }
+            .select.title label {
+                width: 480px;
+            }
+                .select.title .parametr {
+                    background: url(img/select.png) right 25px center no-repeat;
+                }
+            .select.category ul li {
+                padding-left: 26px;
+            }
+                .select .parametr {
+                    color: #d9dfff;
+                    font-size: 14px;
+                    display: block;
+                    cursor: pointer;
+                    background: url(img/select.png) right center no-repeat;
+                    padding-bottom: 12px;
+                    padding-top: 12px;
+                    border-bottom: 1px solid #17203a;
+                }
+                .select ul {
+                    list-style: none;
+                    position: absolute;
+                    top: 69px;
+                    left: 0;
+                    z-index: 9;
+                    background: rgba(16, 22, 38, 0.9);
+                    display: none;
+                    padding: 18px 17px;
+                }
+                .select ul li {
+                    display: block;
+                    margin-bottom: 12px;
+                    position: relative;
+                }
+                    .select ul li a {
+                        font-size: 14px;
+                        color: #d9dfff;
+                    }
+                .select ul li a:hover {
+                    color: #2297f4;
+                }
+                        .select ul li:last-child {
+                            margin-bottom: 0;
+                        }
+                    /* ------------------------------------ */
+                    /* ------------------------------------ */
+                    .bets_form .item .select.category ul li:before {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    .bets_form .item .select.category ul li.football:before {
+                        background: url(img/footbal.png) no-repeat left center;
+                    }
+                    .bets_form .item .select.category ul li.basc:before {
+                        background: url(img/basc.png) no-repeat left center;
+                    }
+                    .bets_form .item .select.category ul li.hockey:before {
+                        background: url(img/hockey.png) no-repeat left center;
+                    }
+                    .bets_form .item .select.category ul li.tennis:before {
+                        background: url(img/tennis.png) no-repeat left center;
+                    }
+                    /* ------------------------------------ */
+                    /* ------------------------------------ */
+        .bets_form .item label .add_photo {
+            float: left;
+            width: 102px;
+            height: 41px;
+        }
+        .bets_form .item label .change_cover {
+            float: left;
+            font-size: 12px;
+            color: #454f73;
+            padding-top: 13px;
+            margin-left: 15px;
+            border-bottom: 1px solid #1e2437;
+        }
+        .bets_form label .add_link {
+            float: left;
+            width: 21px;
+            height: 21px;
+            border: 1px solid #181f39;
+            border-radius: 50%;
+            position: relative;
+        }
+            .bets_form label .add_link:before {
+                content: '';
+                position: absolute;
+                left: 7px;
+                top: 10px;
+                width: 7px;
+                height: 1px;
+                background: #454f73;
+            }
+            .bets_form label .add_link:after {
+                content: '';
+                position: absolute;
+                left: 10px;
+                top: 7px;
+                height: 7px;
+                width: 1px;
+                background: #454f73;
+            }
+            .bets_form label .add_link:hover {
+                background: #208ce2;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+            .bets_form label .add_link:hover:before {
+                background: #fff;
+            }
+            .bets_form label .add_link:hover:after {
+                background: #fff;
+            }
+        .bets_form .item label.add_lab .add_inp {
+            width: 222px;
+            float: left;
+            border: 0;
+            background: none;
+            outline: none;
+            padding-top: 4px;
+            margin-left: 11px;
+            color: #d9dfff;
+            font-size: 14px;
+        }
+        .bets_form .item .inp {
+            width: 257px;
+            border: 0;
+            border-bottom: 1px solid #17203a;
+            background: none;
+            outline: none;
+            padding-bottom: 9px;
+            padding-top: 14px;
+            color: #d9dfff;
+            font-size: 14px;
+            position: relative;
+        }
+        .bets_form .item label .abs_edit {
+            position: absolute;
+            right: 0;
+            top: 14px;
+            width: 11px;
+            height: 13px;
+            background: url(img/abs_edit.png) no-repeat center center;
+            cursor: pointer;
+        }
+        .bets_form .item label .abs_edit.location {
+            top: 39px;
+        }
+        .bets_form label .add_link_text {
+            float: left;
+            font-size: 12px;
+            color: #454f73;
+            padding-top: 5px;
+            margin-left: 10px;
+        }
+        .bets_form label .add_link_text.link {
+            width: 170px;
+        }
+        .bets_form .item label.cof, .bets_form .item label.cof input {
+            width: 69px;
+        }
+        .bets_form .item label.cof.team_last {
+            margin-right: 15px;
+        }
+        .bets_form .btn {
+            width: 99px;
+            background: #2297f4;
+            color: #dfe4f8;
+            text-align: center;
+            line-height: 31px;
+            float: right;
+            margin-top: 68px;
+            margin-right: 24px;
+        }
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*                footer               */
+/* ---                              --- */
+/* ------------------------------------ */
+/* ------------------------------------ */
+footer {
+    background: #090c17;
+}
+    footer ul {
+        list-style: none;
+        float: left;
+        border-left: 1px solid #0f1228;
+        height: 155px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+        footer ul:nth-child(1) {
+            border-left: none;
+        }
+    footer ul.about {
+        width: 375px;
+        padding-left: 0;
+    }
+        footer ul.about .name {
+            text-transform: uppercase;
+        }
+        footer ul .name {
+            display: block;
+            color: #83848f;
+            font-size: 12px;
+            font-family: 'helB';
+            padding-bottom: 10px;
+            padding-top: 25px;
+        }
+        footer ul.about .text {
+            color: #474a5a;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        footer ul.about li.card {
+            padding-top: 12px;
+            margin-right: 10px;
+            display: inline-block;
+        }
+        footer ul.about li.card:last-child {
+            margin-right: 0;
+        }
+            footer ul.about li.card img {
+                vertical-align: middle;
+            }
+            footer ul.about .text span {
+                font-family: 'helB';
+            }
+    footer ul.navigation {
+        width: 190px;
+    }
+        footer ul.navigation li.link, footer ul.category li.link {
+            float: left;
+            width: 50%;
+            line-height: 18px;
+        }
+            footer ul.navigation li.link a, footer ul.category li.link a, footer ul.how li.link a {
+                color: #474a5a;
+                font-size: 13px;
+            }
+            footer ul li.link a:hover {
+                color: #fff;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+    footer ul.category {
+        width: 205px;
+    }
+    footer ul.how {
+        width: 237px;
+        padding-right: 10px;
+    }
+        footer ul.how li.link {
+            width: 100%;
+        }
+    footer ul.social {
+        width: 133px;
+        padding-right: 0;
+    }
+        footer ul.social li.link {
+            float: left;
+            margin-right: 13px;
+        }
+    footer .develop {
+        width: 100%;
+        border-top: 1px solid #0f1228;
+        float: left;
+        padding: 11px 0;
+    }
+        footer .develop .reserved {
+            float: left;
+            color: #333642;
+            font-size: 12px;
+        }
+        footer .develop .develop_firm {
+            float: right;
+            color: #333642;
+            font-size: 12px;
+        }
+            footer .develop .develop_firm:hover {
+                color: #fff;
+                -webkit-transition: 0.3s ease-out;
+                -o-transition: 0.3s ease-out;
+                -moz-transition: 0.3s ease-out;
+                transition: 0.3s ease-out;
+            }
+/* ------------------------------------ */
+/* ---                              --- */
+/*            portfolio_page            */
+/* ---                              --- */
+/* ------------------------------------ */
+
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ---                              --- */
+/*          page_services_prices        */
+/* ---                              --- */
+/* ------------------------------------ */
+
+
+
+            
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 1200px){
+    .container {
+        width: 1024px;
+    }
+    header.other {
+        left: 135px;
+    }
+    header.other .top_menu {
+        width: 859px;
+    }
+    header .top_menu {
+        width: 730px;
+    }
+        header .top_menu li {
+            margin-left: 40px;
+        }
+            header .top_menu li input {
+                width: 270px;
+            }
+    .content {
+        width: 730px;
+    }
+    .content.other {
+        margin-left: 135px;
+        width: 859px;
+    }
+    .outcome .item {
+        width: 238px;
+        padding: 13px 10px 13px 10px;
+    }
+        .outcome .item .team {
+            height: 30px;
+        }
+        .outcome .item .view {
+            padding: 3px 20px 0 20px;
+        }
+    .rate_tabl .date {
+        width: 245px;
+        padding-left: 58px;
+    }
+    .rate_tabl .teams {
+        width: 240px;
+    }
+    .rate_tabl .team_1, .rate_tabl .team_2 {
+        width: 85px;
+    }
+    .rate_tabl .draw {
+        width: 75px;
+    }
+    .rate_tabl .item .logo {
+        width: 60px;
+    }
+    .rate_tabl .item .live_results, .rate_tabl .item .today_parrents, .balance_parrents .available .today_parrents {
+        width: 70px;
+    }
+    .rate_tabl .item .plus_parrents {
+        width: 40px;
+    }
+    .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+        width: 310px;
+    }
+    .rate_tabl .item .team_1_parrents, .rate_tabl .item .team_2_parrents {
+        width: 85px;
+    }
+        .rate_tabl .item .team_1_parrents a {
+            padding-left: 23px;
+        }
+    .rate_tabl .item .draw_parrents {
+        width: 80px;
+    }
+        .rate_tabl .item .draw_parrents a {
+            padding-left: 17px;
+        }
+        .rate_tabl .item .team_2_parrents a {
+            padding-left: 13px;
+        }
+    .content.faq .faq_parrents .tab_quetions {
+        width: 500px;
+    }
+    .content.faq .faq_parrents .ask_us {
+        width: 216px;
+    }
+    .main_half {
+        width: 512px;
+    }
+    .main_half .item_half a {
+        width: 80px;
+    }
+    .live_parrents {
+        margin-left: 32px;
+    }
+    .content.my_bets .rate_tabl .name .date {
+        width: 217px;
+    }
+    .content.my_bets .rate_tabl .name .teams {
+        width: 200px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 293px;
+    }
+    .balance_parrents .available {
+        width: 469px;
+    }
+    .balance_parrents .available .item .team_parrents {
+        width: 270px;
+    }
+    .payout_parrents .date_pay {
+        width: 190px;
+    }
+    .payout_parrents .user_pay {
+        width: 180px;
+    }
+    .payout_parrents .detail_pay {
+        width: 140px;
+    }
+    .payout_parrents .win_pay {
+        width: 150px;
+    }
+    .payout_parrents .all_pay {
+        width: 70px;
+    }
+    .main_payout .item .today_parrents {
+        width: 110px;
+    }
+    .main_payout .item .user_parrents {
+        width: 239px;
+    }
+    .main_payout .item .more_parrents {
+        width: 205px;
+    }
+    .main_payout .item .detail_parrents {
+        width: 65px;
+    }
+    .content .main .general_info {
+        width: 510px;
+    }
+    .content .main .select_info {
+        width: 200px;
+    }
+    .content.settings .select {
+        margin-left: 33px;
+        width: 180px;
+    }
+    .content .main .general_info form label, .content .main .general_info form label input {
+        width: 180px;
+    }
+    .content .main .general_info form label:nth-child(even) {
+        margin-left: 90px;
+    }
+    .bets_form .item label .add_photo {
+        width: 67px;
+    }
+    .bets_form .item label {
+        width: 205px;
+    }
+    .bets_form label .add_link_text {
+        width: 158px;
+        padding-top: 3px;
+    }
+    .select.category, .bets_form .item label.add_lab.second, .bets_form .item .inp {
+        width: 210px;
+    }
+    .bets_form .item label.cof, .bets_form .item label.cof input {
+        width: 57px;
+    }
+    .select.date label, .bets_form .item label.cof.team_last {
+        margin-right: 24px;
+    }
+    .bets_form label .add_link_text, .bets_form .item label.add_lab.second {
+        width: auto;
+    }
+    footer ul {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+        footer ul.about {
+            width: 314px;
+        }
+        footer ul.navigation {
+            width: 165px;
+        } 
+        footer ul.category {
+            width: 175px;
+        }
+        footer ul.how {
+            width: 220px;
+        }
+        footer ul.social {
+            width: 120px;
+        }
+}
+
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 1024px){
+    .container {
+        width: 991px;
+    }
+    header {
+        left: 245px;
+    }
+    header .top_menu {
+        width: 716px;
+    }
+        header .top_menu li input {
+            width: 240px;
+        }
+    .home .wrapper_left {
+        width: 230px;
+    }
+        .home .wrapper_left .user .logo {
+            width: 40px;
+            height: 40px;
+            margin-left: 17px;
+            padding-top: 5px;
+        }
+        .home .wrapper_left nav .tab li.bets {
+            width: 95px;
+        }
+        .home .wrapper_left nav .tab li {
+            width: 45px;
+        }
+    .content {
+        width: 716px;
+        margin-left: 245px;
+    }
+        .outcome .item {
+            width: 227px;
+            margin-left: 17px;
+        }
+        .rate_tabl .date, .rate_tabl .teams {
+            width: 230px;
+        }
+        .rate_tabl .team_1, .rate_tabl .team_2 {
+            width: 90px;
+        }
+        .rate_tabl .item .plus_parrents {
+            text-align: left;
+        }
+        .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+            width: 307px;
+        }
+        .rate_tabl .item .team_1_parrents, .rate_tabl .item .team_2_parrents {
+            width: 79px;
+        }
+            .rate_tabl .item .team_1_parrents a, .rate_tabl .item .team_2_parrents a {
+                padding-left: 3px;
+            } 
+            .rate_tabl .item .draw_parrents a {
+                padding-left: 6px;
+            }
+    .content.faq .faq_parrents .tab_quetions {
+        width: 486px;
+    }
+    .content.other, header.other .top_menu {
+        width: 826px;
+    }
+    .live_parrents {
+        width: 282px;
+    }
+    .live_parrents .name_live:before {
+        width: 239px;
+    }
+    .live_parrents .news_time .news_now {
+        width: 183px;
+    }
+    .content.my_bets .rate_tabl .name .date {
+        width: 203px;
+    }
+    .content.my_bets .rate_tabl .item {
+        height: auto;
+    } 
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 279px;
+    }
+    .balance_parrents .main {
+        width: 227px;
+    }
+    .balance_parrents .main .item .btn.deposit {
+        width: 103px;
+        margin-bottom: 10px;
+        margin-right: auto;
+    }
+    .balance_parrents .main .item .btn {
+        display: block;
+        margin: 0 auto;
+    }
+    .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+        width: 586px;
+    } 
+    .payout_parrents .date_pay {
+        width: 185px;
+    }
+    .payout_parrents .detail_pay {
+        width: 131px;
+    }
+    .main_payout .item .more_parrents {
+        width: 190px;
+    }
+    .content .main .general_info {
+        width: 496px;
+    }
+    .content.settings .select, .content .main .general_info form label, .content .main .general_info form label input {
+        width: 166px;
+    }
+    .content .main .general_info form label:nth-child(even) {
+        margin-left: 104px;
+    }
+    footer ul.about {
+        width: 300px;
+    }
+    footer ul.navigation {
+        width: 160px;
+    }
+    footer ul.category {
+        width: 165px;
+    }
+    footer ul.how {
+        width: 216px;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 991px){
+    .container {
+        width: 767px;
+    }
+    header {
+        left: 200px;
+    }
+    header .top_menu {
+        width: 548px;
+    }
+    header.other .top_menu .language {
+        float: right;
+    }
+    header.other .top_menu li {
+        margin-left: 40px;
+    }
+    header.other .top_menu li:nth-child(1) {
+        margin-left: 0;
+    }
+    header.other .top_menu li input {
+        width: 250px;
+    }
+        header .top_menu {
+            padding-bottom: 9px;
+        }
+            header .top_menu li {
+                margin-left: 20px;
+            }
+            header .top_menu li.search {
+                margin-left: 25px;
+            }
+            header .top_menu li input {
+                width: 185px;
+            }
+            header .top_menu li.login {
+                margin-left: 10px;
+            }
+            header .top_menu li.language {
+                float: left;
+                margin-left: 15px;
+            }
+    .home .wrapper_left {
+        width: 200px;
+    }
+        .home .wrapper_left .user {
+            text-align: center;
+        }
+            .home .wrapper_left .user .logo {
+                float: none;
+                margin-left: 0;
+            }
+            .home .wrapper_left .user .name {
+                float: none;
+                padding-left: 0;
+            }
+        .home .wrapper_left nav .tab li.bets {
+            width: 80px;
+        }
+        .home .wrapper_left nav .tab li {
+            width: 40px;
+        }
+    .content {
+        margin-left: 200px;
+        width: 548px;
+    }
+        .slider_home {
+            height: 224px;
+        }
+            .slider_home .abs_sl {
+                width: 340px;
+            }
+        .outcome .item {
+            width: 265px;
+        }
+            .outcome .item:nth-child(2n+3) {
+                margin-left: 0;
+            }
+            .outcome .item .view {
+                padding: 0px;
+                padding-top: 3px;
+            }
+        .rate_tabl .item {
+            height: auto;
+        }
+            .rate_tabl .item .logo {
+                width: 50px;
+            }
+            .rate_tabl .date, .rate_tabl .teams {
+                width: 146px;
+            }
+            .rate_tabl .date {
+                padding-left: 50px;
+            }
+            .rate_tabl .item .live_results, .rate_tabl .item .today_parrents, .balance_parrents .available .today_parrents {
+                width: 70px;
+            }
+            .rate_tabl .item .team_1_parrents, .rate_tabl .item .team_2_parrents {
+                width: 75px;
+            }
+            .rate_tabl .team_2 {
+                padding-left: 22px;
+            }
+            .rate_tabl .draw {
+                padding-left: 23px;
+            }
+            .rate_tabl .team_1 {
+                padding-left: 28px;
+            }
+            .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+                width: 158px;
+                padding-bottom: 5px;
+            }
+            .rate_tabl .item .plus_parrents {
+                text-align: right;
+            }
+            .rate_tabl .item .team_1_parrents a, .rate_tabl .item .team_2_parrents a {
+                padding-left: 13px;
+            }
+            .rate_tabl .item .draw_parrents a {
+                padding-left: 20px;
+            }
+    .content.faq {
+        padding-bottom: 50px;
+    }
+    .content.faq .faq_parrents .tab_quetions {
+        width: 548px;
+        float: none;
+        margin-bottom: 30px;
+    }
+    .content.faq .faq_parrents .ask_us {
+        float: none;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .content.other, header.other .top_menu, .main_half, .live_parrents {
+        width: 612px;
+    }
+    .main_half .item_half a {
+        width: 98px;
+    }
+    .live_parrents {
+        margin-left: 0;
+    }
+    .live_parrents .video {
+        height: 250px;
+    }
+    .live_parrents .name_live:before {
+        width: 570px;
+    }
+    .live_parrents .news_parrents {
+        padding-bottom: 20px;
+    }
+    .live_parrents .news_time {
+        text-align: left;
+    }
+    .live_parrents .news_time .news_now {
+        width: 204px;
+        margin-left: 60px;
+    }
+    .live_parrents .news_time .time {
+        left: -59px;
+    }
+    .content.sign_in {
+        padding-bottom: 50px;
+    }
+    .sign_parrents .form_login.sign_in {
+        padding: 49px 50px 43px 50px;
+    }
+    .sign_parrents .form_login.sign_in form label {
+        width: 200px;
+    }
+    .sign_parrents .form_login.sign_in form label input {
+        width: 200px;
+    }
+    .content.my_bets .rate_tabl .name .date {
+        width: 110px;
+    }
+    .content.my_bets .rate_tabl .name .teams {
+        width: 99px;
+    }
+    .content.my_bets .rate_tabl .name .coef {
+        width: 129px;
+    }
+    .content.my_bets .rate_tabl .name .bet {
+        width: 118px;
+    }
+    .content.my_bets .rate_tabl .name .profit {
+        width: 92px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 121px;
+    }
+    .balance_parrents .available {
+        width: 548px;
+    }
+    .balance_parrents .available .item .team_parrents {
+        width: 355px;
+    }
+    .balance_parrents .main {
+        margin-left: 0;
+        width: 280px;
+    }
+    .balance_parrents .main .item .btn_parrents {
+        text-align: center;
+    }
+    .balance_parrents .main .item .btn {
+        display: inline-block;
+    }
+    .balance_parrents .main .money_window.active {
+        left: 0;
+        width: 548px;
+    }
+    .balance_parrents .main .money_window label.card ul li a {
+        width: 48px;
+        height: 35px;
+    }
+    .balance_parrents .main .money_window form label, .balance_parrents .main .money_window form label input, .balance_parrents .main .money_window form label:nth-child(odd), .balance_parrents .main .money_window form label:nth-child(odd) input {
+        width: 226px;
+    }
+    .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+        width: 418px;
+    }
+    .main_payout .item {
+        height: auto;
+        float: left;
+        padding-bottom: 10px;
+    }
+    .payout_parrents .date_pay {
+        width: 120px;
+    }
+    .payout_parrents .user_pay {
+        width: 118px;
+    }
+    .payout_parrents .detail_pay {
+        width: 100px;
+    }
+    .payout_parrents .win_pay {
+        width: 140px;
+    }
+    .main_payout .item .today_parrents {
+        width: 98px;
+    }
+    .main_payout .item .user_parrents {
+        width: 136px;
+    }
+        .main_payout .item .user_parrents .name {
+            width: 90px;
+        }
+    .main_payout .item .more_parrents {
+        width: 150px;
+    }
+    .main_payout .item .pay_parrents .btn {
+        width: 85px;
+    }
+    .content .main .general_info {
+        width: 548px;
+    }
+    .content.settings .select, .content .main .general_info form label, .content .main .general_info form label input {
+        width: 192px;
+    }
+    .content .main .general_info form label:nth-child(even) {
+        margin-left: 77px;
+    }
+    .content .main .select_info {
+        width: 548px;
+        margin-left: 0;
+    }
+    .content .main .select_info {
+        padding: 30px 20px 17px 17px;
+    }
+    .bets_form .item label {
+        width: 190px;
+    }
+    .bets_form .item label .add_photo {
+        width: 55px;
+        height: 34px;
+    }
+    .bets_form .item label .change_cover {
+        margin-left: 11px;
+    }
+    .bets_form label .add_link_text.link {
+        width: 150px;
+    }
+    .content.my_bets {
+        padding-bottom: 50px;
+    }
+    footer ul {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    footer ul.about {
+        width: 270px;
+    }
+    footer ul.about li.card {
+        margin-right: 7px;
+    }
+    footer ul.navigation {
+        width: 225px;
+    }
+    footer ul.category {
+        width: 252px;
+    }
+        footer ul.navigation li.link, footer ul.category li.link {
+            width: 33.3333%;
+        }
+    footer ul.how {
+        width: 270px;
+        border-left: 0;
+        padding-left: 0;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 767px){
+    .container {
+        width: 480px;
+        padding-left: 0;
+        padding-right: 0;
+    }  
+    .open_mob_menu {
+        margin-top: 13px;
+        float: left;
+        width: 30px;
+        height: 15px;
+    }
+        .open_mob_menu span, .open_mob_menu:before, .open_mob_menu:after {
+            height: 2px;
+            background: #fff;
+        }
+        .open_mob_menu span {
+            top: 9px;
+        }
+        .open_mob_menu:after {
+            top: 12px;
+        }
+    .open_mob_menu.active:before {
+        top: -1px;
+        left: 6px;
+    }
+    .open_mob_menu.active:after {
+        left: 5px;
+        top: 14px;
+    }
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+    header, header.other {
+        left: 10px;
+    }
+    .container.active {
+        left: 150px;
+    }
+    .home .wrapper_left, .home .wrapper_left.other {
+        width: 100%;
+        height: auto;
+    }
+        .home .wrapper_left .name_logo, .home .wrapper_left.other .name_logo {
+            padding: 10px 0 10px 50px;
+            text-align: left;
+        }
+        .home .wrapper_left .user, .home .wrapper_left.other .user {
+            text-align: left;
+            width: auto;
+            padding-left: 10px;
+            padding-bottom: 0;
+            border-bottom: 1px solid #0f1629;
+        }
+            .home .wrapper_left .user .logo, .home .wrapper_left.other .user .logo {
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-top: 0;
+                width: 28px;
+                height: 28px;
+                margin-right: 10px;
+                float: left;
+            }
+            .home .wrapper_left .user .money, .home .wrapper_left.other .user .money {
+                margin-bottom: 0;
+            }
+            .home .wrapper_left .user .name, .home .wrapper_left.other .user .name {
+                float: left;
+                border-left: 1px solid #0f1629;
+                height: 100%;
+                padding: 5px 10px;
+            }
+            .home .wrapper_left .user .name .name_user, .home .wrapper_left.other .user .name .name_user {
+                display: none;
+            }
+        .home .wrapper_left nav, .home .wrapper_left.other nav {
+            clear: inherit;
+        }
+            .home .wrapper_left nav .tab li.bets {
+                border-left: 1px solid #0f1629;
+                padding-left: 10px;
+                width: 102px;
+            }
+            .home .wrapper_left nav .tab.admin li.bets {
+                width: 89px;
+            }
+            .home .wrapper_left.other nav .tab {
+               border-top: 1px solid #0f1629;
+               border-bottom: 1px solid #0f1629;
+            }
+            .home .wrapper_left.other nav .tab li.bets {
+                width: 102px;
+                float: left;
+                border: 0;
+                border-left: 1px solid #0f1629;
+            }
+            .home .wrapper_left.other nav .tab li {
+                height: 39px;
+                padding: 11px 0;
+                line-height: inherit;
+            }
+            .home .wrapper_left.other nav .tab li:nth-child(2) {
+                border-left: 1px solid #0f1629;
+            }
+    .home .wrapper_left.other .user .logo {
+        margin-bottom: 0;
+    }
+            .home .wrapper_left nav .tab li, .home .wrapper_left.other nav .tab li {
+                width: 53px;
+            }
+    .home .wrapper_left .menu_nav .item, .home .wrapper_left.other .menu_nav .item {
+        float: left;
+        width: 20%;
+    }
+    .home .wrapper_left.other .menu_nav .item a {
+        line-height: 54px;
+        height: 54px;
+    }
+    .home .wrapper_left.other .menu_nav .item a img {
+        vertical-align: middle;
+    }
+    .home .wrapper_left.other .menu_nav .item .link_after {
+        width: auto;
+        height: auto;
+        padding-top: 0;
+    }
+    .home .wrapper_left.other .menu_nav .item a:hover .link_after {
+        left: 30px;
+    }
+    .home .wrapper_left .menu_nav .item:hover a, .home .wrapper_left.other .menu_nav .item:hover a {
+        padding: 0;
+    }
+        .home .wrapper_left .menu_nav .item a, .home .wrapper_left.other .menu_nav .item a {
+            padding: 0 0 0 31px;
+            font-size: 13px;
+        }
+            .home .wrapper_left .menu_nav .item .view, .home .wrapper_left.other .menu_nav .item .view {
+                opacity: 0;
+                display: inline-block;
+            }
+            .home .wrapper_left .menu_nav .item:hover .view, .home .wrapper_left.other .menu_nav .item:hover .view {
+                opacity: 1;
+            }
+    .content {
+        width: 100%;
+        margin-top: 150px;
+        margin-left: 0;
+    }
+    .content.other {
+        margin-top: 150px;
+        margin-left: 0;
+    }
+    .slider_home {
+        height: 196px;
+    }
+    .outcome {
+        float: left;
+        text-align: center;
+    }
+    .outcome .item {
+        float: none;
+        display: inline-block;
+        margin-left: 0;
+        width: 300px;
+    }
+    .rate_tabl .name {
+        display: none;
+    }
+    .rate_tabl .item .logo {
+        width: 70px;
+    } 
+    .rate_tabl .item .live_results, .rate_tabl .item .today_parrents, .balance_parrents .available .today_parrents {
+        width: 80px;
+    }
+    .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+        width: 330px;
+    }
+    .rate_tabl .item .plus_parrents, .rate_tabl .item .team_1_parrents, .rate_tabl .item .draw_parrents, .rate_tabl .item .team_2_parrents {
+        text-align: center;
+        width: 85px;
+    }
+    .rate_tabl .item .plus_parrents a, .rate_tabl .item .team_1_parrents a, .rate_tabl .item .draw_parrents a, .rate_tabl .item .team_2_parrents a {
+        padding: 0;
+    }
+    .home.error {
+        padding-top: 80px;
+        padding-bottom: 50px;
+    }
+    .home.error .error_404 {
+        font-size: 200px;
+    }
+    .slider_home .abs_sl .name {
+        font-size: 25px;
+        padding-top: 60px;
+    }
+    .content.about {
+        padding-bottom: 50px;
+    }
+    .about_parrents {
+        padding: 30px 40px 50px 35px;
+    }
+    .content.faq .faq_parrents .tab_quetions {
+        width: 480px;
+    }
+    .content.faq .faq_parrents .tab_quetions, .content.faq .faq_parrents .ask_us  {
+        width: 320px;
+    }
+    .content.other, header.other .top_menu, .main_half, .live_parrents {
+        width: 480px;
+        text-align: center;
+    }
+    .menu_team .watch {
+        margin-left: 0;
+    }
+    .main_half {
+        margin-top: 0;
+    }
+    .main_half .item_half {
+        float: none;
+        display: inline-block;
+        margin-left: 0;
+    }
+    .live_parrents {
+        text-align: left;
+    }
+    .live_parrents .name_live:before {
+        width: 437px;
+    }
+    .live_parrents .news_time {
+        text-align: center;
+    }
+    .live_parrents .news_time .news_now {
+        width: 374px;
+    }
+    .content.sign_in {
+        margin-top: 220px;
+    }
+    .sign_parrents .form_login.sign_in {
+        padding: 20px 0;
+    }
+    .sign_parrents .form_login.sign_in form {
+        text-align: center;
+        width: 480px;
+    }
+    .sign_parrents .form_login.sign_in form label {
+        width: 280px;
+        display: inline-block;
+        float: none;
+    }
+    .sign_parrents .form_login.sign_in form label:nth-child(even) {
+        margin-left: 0;
+    }
+    .sign_parrents .form_login.sign_in form label input {
+        width: 280px;
+    }
+    .content.my_bets {
+        padding-bottom: 50px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 300px;
+    }
+    .content.my_bets .rate_tabl .item .bet_parrents p {
+        padding-left: 0px;
+    }
+    .content.my_profile {
+        padding-bottom: 50px;
+    }
+    .content.my_profile .content_tab li {
+        margin-left: 28px;
+    }
+    .content.my_profile .content_tab li:nth-child(1) {
+        margin-left: 0;
+    }
+    .balance_parrents .available, .balance_parrents .main .money_window.active {
+        width: 480px;
+    }
+    .balance_parrents .available .item .team_parrents {
+        width: 275px;
+    } 
+    .balance_parrents .main .money_window label.card ul li {
+        margin-left: 28px;
+    }
+    .balance_parrents .main .money_window label.card ul li:nth-child(6n+7) {
+        margin-left: 0;
+    }
+    .balance_parrents .main .money_window form label, .balance_parrents .main .money_window form label input, .balance_parrents .main .money_window form label:nth-child(odd), .balance_parrents .main .money_window form label:nth-child(odd) input {
+        width: 192px;
+    }
+    .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+        width: 340px;
+    }
+    .content.notifications .content_tab li {
+        margin-left: 25px;
+    }
+    .content.notifications .content_tab li:nth-child(1) {
+        margin-left: 0;
+    }
+    .content.notifications {
+        padding-bottom: 50px;
+    }
+    .payout_parrents {
+        display: none;
+    }
+    .main_payout .item {
+        text-align: center;
+    }
+    .main_payout .item .today_parrents, .main_payout .item .user_parrents, .main_payout .item .more_parrents, .main_payout .item .detail_parrents, .main_payout .item .pay_parrents {
+        display: inline-block;
+        float: none;
+    }
+    .main_payout .item .user_parrents {
+        width: 223px;
+    }
+    .main_payout .item .user_parrents .name {
+        width: 180px;
+        text-align: left;
+    }
+    .main_payout .item .more_parrents, .main_payout .item .detail_parrents {
+        margin-right: 20px;
+    }
+    .main_payout .item .pay_parrents .more_click.active {
+        right: 15px;
+    }
+    .main_payout .item .more_parrents .more_window {
+        text-align: left;
+        padding: 10px 14px;
+    }
+    .content.settings {
+        padding-bottom: 50px;
+    }
+    .content.settings .content_tab li {
+        margin-left: 23px;
+    }
+    .content.settings .content_tab li:nth-child(1) {
+        margin-left: 0;
+    }
+    .content .main .general_info {
+        width: 480px;
+    }
+    .content .main .general_info .add_photo {
+        float: none;
+        margin: 0 auto;
+        width: 270px;
+    }
+    .content.settings .select, .content .main .general_info form label, .content .main .general_info form label input {
+        width: 270px;
+        margin: 0 auto;
+        float: none;
+        clear: both;
+    }
+    .content .main .general_info form label .name {
+        text-align: left;
+    }
+    .content.settings .select {
+        padding-top: 20px;
+    }
+    .content .main .general_info form {
+        text-align: center;
+    }
+    .content .main .general_info form label {
+        display: inline-block;
+        margin-bottom: 20px;
+    }
+    .content .main .general_info form label:nth-child(even) {
+        margin-left: 0;
+    }
+    .content .main .general_info .btn {
+        float: none;
+        margin: 0 auto;
+    }
+    .content .main .select_info {
+        width: 480px;
+    }
+    .bets_form .item label.add_img {
+        margin-right: 40px;
+    }
+    .select.date label {
+        margin-right: 44px;
+    }
+    .select.time label {
+        margin-right: 44px;
+    }
+    .bets_form label.location, .bets_form label.location .inp {
+        width: 426px;
+    }
+    .bets_form label.teams, .bets_form label.teams .inp {
+        width: 426px;
+    }
+    .bets_form .item label.cof, .bets_form .item label.cof input {
+        width: 103px;
+    }
+    .select.title, .select.title label {
+        width: 426px;
+    }
+    header .row .wrapp_bg .wrapp_menu, header .row .wrapp_bg:before {
+        background: #070a13;
+    }
+    header .top_menu, .content.other, header.other .top_menu {
+        width: 190px;
+        text-align: center;
+    }
+    header .top_menu li.search {
+        margin-left: 0;
+    }
+    header .top_menu li {
+        float: none;
+        display: inline-block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    header.other .top_menu li {
+        margin-left: 0;
+    }
+    header.other .top_menu li input {
+        width: 185px;
+    }
+    header .top_menu li.active {
+        border-bottom: 0;
+    }
+    header .top_menu li a {
+        font-size: 15px;
+    }
+    header .top_menu li.login, header .top_menu li.language {
+        margin-left: 0;
+    }
+    header .top_menu li.sign_up a {
+        background: none;
+    }
+    footer {
+        text-align: center;
+    }
+    footer ul {
+        height: auto;
+        float: none;
+        display: inline-block;
+    }
+    footer ul.about, footer ul.navigation, footer ul.category, footer ul.how, footer ul.social, footer ul.develop {
+        width: 100%;
+    }
+    footer ul.about {
+        padding-left: 20px;
+    }
+    footer .develop {
+        border-top: 0;
+    }
+    footer ul.navigation, footer ul.category, footer ul.social {
+        border: 0;
+    }
+    footer .social {
+        text-align: left;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+/* ------------------------------------------------------------------- */
+@media (max-width: 480px){
+    .container {
+        width: 320px;
+    }
+    .home .wrapper_left .user .name .deposit {
+        width: 27px;
+    }
+        .home .wrapper_left .user .name .deposit span {
+            opacity: 0;
+        }
+    .home .wrapper_left nav .tab li.bets {
+        width: 71px;
+        padding-left: 0;
+    }
+    .home .wrapper_left nav .tab li {
+        width: 29px;
+    }
+    .home .wrapper_left .menu_nav {
+        float: left;
+        border-bottom: 1px solid #0f1629;
+    }
+    .home .wrapper_left .menu_nav .item {
+        width: 33.333%;
+        border-bottom: 0;
+    }
+    .home .wrapper_left .menu_nav .item .parrents_img {
+        padding-left: 8px;
+    }
+    .content, .content.other {
+        margin-top: 220px;
+    }
+    .slider_home {
+        height: 150px;
+    }
+    .slider_home .abs_sl {
+        width: 100%;
+    }
+    .slider_home .abs_sl .name {
+        font-size: 22px;
+        padding-top: 20px;
+    }
+    .slider_home .abs_sl .info {
+        font-size: 13px;
+    }
+    .content_tab {
+        padding-top: 0;
+    }
+    .content_tab li {
+        margin-left: 33px;
+    }
+    .outcome .item {
+        width: 100%;
+        padding: 13px 20px 13px 20px;
+    }
+    .rate_tabl .item .logo {
+        width: 50px;
+    }
+    .rate_tabl .item .live_results, .rate_tabl .item .today_parrents, .balance_parrents .available .today_parrents {
+        width: 70px;
+    }
+    .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+        width: 190px;
+    }
+    .rate_tabl .item .plus_parrents, .rate_tabl .item .team_1_parrents, .rate_tabl .item .draw_parrents, .rate_tabl .item .team_2_parrents {
+        width: 80px;
+    }
+    .content.home, .content.category {
+        padding-bottom: 20px;
+    }
+    .navigation_menu {
+        top: -20px;
+    }
+    .home.error .error_404 {
+        font-size: 150px;
+    }
+    .content.other, .main_half, .live_parrents {
+        width: 320px;
+    }
+    .home .wrapper_left.other nav .tab li.bets {
+        width: 71px;
+    }
+    .home .wrapper_left.other nav .tab li {
+        width: 29px;
+    }
+    .home .wrapper_left.other .menu_nav {
+        width: 100%;
+    }
+    .home .wrapper_left.other .menu_nav .item {
+        width: 33.3333%;
+    }
+    .home .wrapper_left.other .menu_nav .item:hover {
+        padding-left: 10px;
+    }
+    .menu_team {
+        width: 320px;
+        margin-left: 0;
+        left: 0;
+    }
+    .team_vs_parrents {
+        padding-top: 20px;
+    }
+    .team_vs_parrents .team_vs, .team_vs_parrents .team_vs.second {
+        width: 100%;
+        text-align: center;
+    }
+    .team_vs_parrents .results_vs {
+        margin: 7px 16px;
+    }
+    .menu_team .watch:before, .menu_team .watch:after {
+        width: 100px;
+    }
+    .main_half .item_half a {
+        width: 106px;
+    }
+    .live_parrents .name_live:before {
+        width: 277px;
+    }
+    .live_parrents .video {
+        height: 200px;
+    }
+    .live_parrents .news_time .news_now {
+        width: 215px;
+    }
+    .content.sign_in {
+        margin-top: 310px;
+    }
+    .sign_parrents {
+        margin-top: 10px;
+    }
+    .sign_parrents .form_login.sign_in form {
+        width: 320px;
+    }
+    .content.my_bets .content_tab li {
+        margin-left: 2px;
+    }
+   .content.my_bets .content_tab {
+        padding-top: 20px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 195px;
+    }
+    .content.my_bets .rate_tabl .item .profit_parrents {
+        width: 118px;
+    }
+    .content.my_profile {
+        margin-top: 200px;
+    }
+    .content.my_profile .profile_parrents .content_tab {
+        margin-top: 30px;
+    }
+    .content.my_profile .content_tab li {
+        margin-left: 5px;
+    }
+    .content.my_profile .content_tab li a {
+        font-size: 12px;
+    }
+    .content.my_profile .content_tab li a {
+        font-size: 11px;
+    }
+    .balance_parrents .available, .balance_parrents .main .money_window.active {
+        width: 320px;
+    }
+    .balance_parrents .available .item .team_parrents {
+        width: 130px;
+    }
+    .balance_parrents .main {
+        width: 320px;
+    }
+    .balance_parrents .main .money_window label.card ul li {
+        margin-left: 7px;
+    }
+    .balance_parrents .main .money_window label.card ul li:nth-child(6n+7) {
+        margin-left: 7px;
+    }
+    .balance_parrents .main .money_window label.card ul li:nth-child(5n+6) {
+        margin-left: 0;
+    }
+    .balance_parrents .main .money_window form label, .balance_parrents .main .money_window form label input, .balance_parrents .main .money_window form label:nth-child(odd), .balance_parrents .main .money_window form label:nth-child(odd) input {
+        width: 268px;
+    }
+    .balance_parrents .main .money_window form label:nth-child(odd) {
+        margin-left: 0;
+    }
+    .balance_parrents .main .money_window .rules .agree {
+        width: 230px;
+    } 
+    .content.notifications .content_tab li {
+        margin-left: 1px;
+    }
+    .content.notifications .content_tab li a {
+        font-size: 12px;
+    }
+    .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+        width: 190px;
+    }
+    .content.settings .content_tab, .content.notifications .content_tab, .content.my_bets .content_tab {
+        padding-top: 10px;
+    }
+    .main_payout .item .user_parrents {
+        width: 217px;
+    }
+    .main_payout .item .user_parrents .name {
+        width: 170px;
+    }
+    .main_payout .item .more_parrents {
+        width: 145px;
+    }
+    .main_payout .item .more_parrents, .main_payout .item .detail_parrents {
+        margin-right: 0;
+    }
+    .main_payout .item .more_parrents .more_window.active {
+        width: 320px;
+        right: 0;
+        top: 0;
+    }
+    .main_payout .item .more_parrents .more_window .info {
+        width: 180px;
+    }
+    .main_payout .item .more_parrents .more_window .left_info li {
+        margin-bottom: 20px;
+    }
+    .main_payout .item .more_parrents .more_window .info .team {
+        margin-bottom: 4px;
+    }
+    .main_payout .item .more_parrents .more_window .info .data {
+        margin-bottom: 2px;
+    }
+    .content.settings .content_tab li {
+        margin-left: 0;
+    }
+    .content.settings .content_tab li a {
+        font-size: 12px;
+    }
+    .content .main .general_info, .content .main .select_info {
+        width: 320px;
+    }
+    .content.settings .select, .content .main .general_info form label, .content .main .general_info form label input {
+        width: 260px;
+    }
+    .home .wrapper_left nav .tab.admin li.bets {
+        width: 58px;
+    }
+    .bets_form .item label {
+        float: none;
+        display: inline-block;
+    }
+    .bets_form .item label, .select.category, .bets_form .item .inp, .bets_form label.location, .bets_form label.location .inp, .bets_form label.teams, .bets_form label.teams .inp, .select.title, .select.title label {
+        width: 257px;
+    }
+    .bets_form .item label.cof, .bets_form .item label.cof input {
+        width: 58px;
+    }
+}
+@media (max-width: 320px){
+    .container {
+        width: 300px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .message {
+        left: 0;
+    }
+    .home .wrapper_left .user .logo {
+        margin-right: 5px;
+    }
+    .home .wrapper_left nav .tab li.bets {
+        width: 60px;
+    }
+    .home .wrapper_left nav .tab li {
+        width: 27px;
+    }
+    .home .wrapper_left .menu_nav .item a {
+        font-size: 12px;
+    }
+    .slider_home .abs_sl .name {
+        font-size: 20px;
+        padding-top: 14px;
+    }
+    .slider_home {
+        height: 140px;
+    }
+    .content_tab li {
+        margin-left: 26px;
+    }
+    .rate_tabl .item .team_parrents, .balance_parrents .available .team_parrents {
+        width: 175px;
+    }
+    .rate_tabl .item .plus_parrents, .rate_tabl .item .team_1_parrents, .rate_tabl .item .draw_parrents, .rate_tabl .item .team_2_parrents {
+        width: 75px;
+    }
+    .home.error .error_404 {
+        font-size: 135px;
+    }
+    .content.faq .faq_parrents .tab_quetions, .content.faq .faq_parrents .ask_us {
+        width: 300px;
+    }
+    .home .wrapper_left.other nav .tab li.bets {
+        width: 60px;
+    }
+    .home .wrapper_left.other nav .tab li {
+        width: 27px;
+    }
+    .home .wrapper_left.other .user .logo {
+        margin-right: 5px;
+    }
+    .content.other, header.other .top_menu, .main_half, .live_parrents {
+        width: 300px;
+    }
+    .menu_team {
+        width: 300px;
+    }
+    .main_half .item_half a {
+        width: 100px;
+    }
+    .live_parrents .name_live:before {
+        width: 258px;
+    }
+    .live_parrents .video {
+        height: 180px;
+    }
+    .live_parrents .news_time .news_now {
+        width: 197px;
+    }
+    .sign_parrents .form_login.sign_in form {
+        width: 300px;
+    }
+    .content.my_bets .content_tab li a {
+        color: #b5bdc2;
+        font-size: 12px;
+    }
+    .content.my_bets .rate_tabl .item .team_parrents {
+        width: 180px;
+    }
+    .content.my_bets .rate_tabl .item .profit_parrents {
+        width: 98px;
+    }
+    .content.my_profile .content_tab li {
+        margin-left: 0;
+    }
+    .balance_parrents .available, .balance_parrents .main .money_window.active, .balance_parrents .main {
+        width: 300px;
+    }
+    .balance_parrents .main .money_window label.card ul li, .balance_parrents .main .money_window label.card ul li:nth-child(5n+6), .balance_parrents .main .money_window label.card ul li:nth-child(6n+7) {
+        margin-left: 19px;
+    }
+    .balance_parrents .main .money_window label.card ul li:nth-child(4n+5) {
+        margin-left: 0;
+    }
+    .balance_parrents .main .money_window .rules .agree {
+        width: 215px;
+    }
+    .balance_parrents .main .money_window label, .balance_parrents .main .money_window label input, .balance_parrents .main .money_window form label, .balance_parrents .main .money_window form label input, .balance_parrents .main .money_window form label:nth-child(odd), .balance_parrents .main .money_window form label:nth-child(odd) input {
+        width: 250px;
+    }
+    .content.notifications .content_tab li a {
+        font-size: 11px;
+    }
+    .content.notifications .balance_parrents .available .item_parrents .item .team_parrents {
+        width: 170px;
+    }
+    .main_payout .item .user_parrents {
+        width: 197px;
+    } 
+    .main_payout .item .user_parrents .name {
+        width: 144px;
+    }
+    .main_payout .item .more_parrents {
+        width: 141px;
+    }
+    .main_payout .item .detail_parrents {
+        width: 50px;
+    }
+    .main_payout .item .more_parrents .more_window.active {
+        width: 300px;
+    }
+    .main_payout .item .more_parrents .more_window .info {
+        width: 172px;
+    }
+    .content.settings .content_tab li a {
+        font-size: 11px;
+    }
+    .content .main .general_info, .content .main .select_info {
+        width: 300px;
+    }
+    .content.settings .select, .content .main .general_info form label, .content .main .general_info form label input {
+        width: 235px;
+    }
+    .home .wrapper_left nav .tab.admin li.bets {
+        width: 49px;
+        font-size: 12px;
+    }
+    .bets_form .item label, .select.category, .bets_form .item .inp, .bets_form label.location, .bets_form label.location .inp, .bets_form label.teams, .bets_form label.teams .inp, .select.title, .select.title label {
+        width: 240px;
+    }
+    .bets_form .item label {
+        margin-right: 18px;
+    }
+}
